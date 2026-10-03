@@ -1,0 +1,171 @@
+employee_code,name,department
+F001,Dr. Chaitra Kamath,Computer Science
+F002,Dr. Sanjay Biradar,Computer Science
+F003,Dr. Vidya Hegde,Computer Science
+F004,Dr. Kiran Menon,Computer Science
+F005,Dr. Amrutha Yadav,Computer Science
+F006,Dr. Tejas Shenoy,Computer Science
+F007,Dr. Pranav Poojary,Computer Science
+F008,Dr. Siddharth Angadi,Computer Science
+F009,Dr. Rehan Lingaiah,Computer Science
+F010,Dr. Rahul Verma,Computer Science
+F011,Dr. Aarav Mishra,Computer Science
+F012,Dr. Arjun Rao,Computer Science
+F013,Dr. Madhu Hegde,Computer Science
+F014,Dr. Rahul Gowda,Computer Science
+F015,Dr. Pavan Angadi,Computer Science
+F016,Dr. Vinay Kamath,Computer Science
+F017,Dr. Ishita Khan,Computer Science
+F018,Dr. Keerthi Murthy,Computer Science
+F019,Dr. Tanvi Murthy,Computer Science
+F020,Dr. Swathi Swamy,Computer Science
+F021,Dr. Fatima Biradar,Computer Science
+F022,Dr. Varun Kattimani,Computer Science
+F023,Dr. Mohammed Acharya,Computer Science
+F024,Dr. Arjun Shenoy,Computer Science
+F025,Dr. Shruti Desai,Computer Science
+F026,Dr. Madhu Chauhan,Computer Science
+F027,Dr. Deepika Poojary,Computer Science
+F028,Dr. Manoj Reddy,Computer Science
+F029,Dr. Dhanush Prasad,Computer Science
+F030,Dr. Nikhil Chauhan,Computer Science
+F031,Dr. Priya Patil,Computer Science
+F032,Dr. Prajwal Lingaiah,Computer Science
+F033,Dr. Siddharth Angadi,Computer Science
+F034,Dr. Sneha Rao,Computer Science
+F035,Dr. Priya Biradar,Computer Science
+F036,Dr. Swathi Yadav,Computer Science
+F037,Dr. Kiran Angadi,Computer Science
+F038,Dr. Prajwal Jadhav,Computer Science
+F039,Dr. Keerthi Ahmed,Computer Science
+F040,Dr. Spoorthi Hiremath,Computer Science
+F041,Dr. Sanjay Jadhav,Electronics & Communication
+F042,Dr. Swathi Reddy,Electronics & Communication
+F043,Dr. Spoorthi Menon,Electronics & Communication
+F044,Dr. Ayesha Shetty,Electronics & Communication
+F045,Dr. Pavan Sharma,Electronics & Communication
+F046,Dr. Zoya Jadhav,Electronics & Communication
+F047,Dr. Kiran Hegde,Electronics & Communication
+F048,Dr. Zoya Mishra,Electronics & Communication
+F049,Dr. Priya Hiremath,Electronics & Communication
+F050,Dr. Deepika Hiremath,Electronics & Communication
+F051,Dr. Kiran Menon,Electronics & Communication
+F052,Dr. Dhanush Rao,Electronics & Communication
+F053,Dr. Varun Chauhan,Electronics & Communication
+F054,Dr. Vinay Hiremath,Electronics & Communication
+F055,Dr. Zoya Kumar,Electronics & Communication
+F056,Dr. Keerthi Shenoy,Electronics & Communication
+F057,Dr. Prajwal Pai,Electronics & Communication
+F058,Dr. Siddharth Biradar,Electronics & Communication
+F059,Dr. Yash Hiremath,Electronics & Communication
+F060,Dr. Swathi Khan,Electronics & Communication
+F061,Dr. Priya Joshi,Electronics & Communication
+F062,Dr. Madhu Singh,Electronics & Communication
+F063,Dr. Aarav Nair,Electronics & Communication
+F064,Dr. Deepika Yadav,Electronics & Communication
+F065,Dr. Rakshita Jadhav,Electronics & Communication
+F066,Dr. Tanvi Angadi,Electrical Engineering
+F067,Dr. Nikhil Joshi,Electrical Engineering
+F068,Dr. Keerthi Angadi,Electrical Engineering
+F069,Dr. Rakshita Biradar,Electrical Engineering
+F070,Dr. Ayesha Angadi,Electrical Engineering
+F071,Dr. Swathi Das,Electrical Engineering
+F072,Dr. Siddharth Nair,Electrical Engineering
+F073,Dr. Ramya Desai,Electrical Engineering
+F074,Dr. Meghana Chauhan,Electrical Engineering
+F075,Dr. Rishab Hegde,Electrical Engineering
+F076,Dr. Rahul Biradar,Electrical Engineering
+F077,Dr. Keerthi Banerjee,Electrical Engineering
+F078,Dr. Tanvi Kulkarni,Electrical Engineering
+F079,Dr. Priya Hiremath,Electrical Engineering
+F080,Dr. Anjali Singh,Electrical Engineering
+F081,Dr. Amrutha Angadi,Mechanical Engineering
+F082,Dr. Nikhil Hegde,Mechanical Engineering
+F083,Dr. Harsha Ahmed,Mechanical Engineering
+F084,Dr. Deepika Banerjee,Mechanical Engineering
+F085,Dr. Rishab Gowda,Mechanical Engineering
+F086,Dr. Arjun Gowda,Mechanical Engineering
+F087,Dr. Rahul Lingaiah,Mechanical Engineering
+F088,Dr. Shruti Patil,Mechanical Engineering
+F089,Dr. Tejas Joshi,Mechanical Engineering
+F090,Dr. Kavya Rao,Mechanical Engineering
+F091,Dr. Tejas Nair,Mechanical Engineering
+F092,Dr. Rehan Kumar,Mechanical Engineering
+F093,Dr. Lakshmi Murthy,Mechanical Engineering
+F094,Dr. Deepika Gowda,Mechanical Engineering
+F095,Dr. Meghana Lingaiah,Mechanical Engineering
+F096,Dr. Spoorthi Angadi,Mechanical Engineering
+F097,Dr. Yash Shetty,Mechanical Engineering
+F098,Dr. Shruti Menon,Mechanical Engineering
+F099,Dr. Rohan Lingaiah,Mechanical Engineering
+F100,Dr. Darshan Yadav,Mechanical Engineering
+F101,Dr. Kiran Biradar,Mechanical Engineering
+F102,Dr. Madhu Patil,Mechanical Engineering
+F103,Dr. Pranav Naik,Mechanical Engineering
+F104,Dr. Tanvi Shetty,Mechanical Engineering
+F105,Dr. Abhishek Lingaiah,Mechanical Engineering
+F106,Dr. Manoj Biradar,Aerospace Engineering
+F107,Dr. Pranav Swamy,Aerospace Engineering
+F108,Dr. Swathi Bhat,Aerospace Engineering
+F109,Dr. Shreya Joshi,Aerospace Engineering
+F110,Dr. Pooja Gowda,Aerospace Engineering
+F111,Dr. Bhavana Swamy,Aerospace Engineering
+F112,Dr. Kiran Kattimani,Aerospace Engineering
+F113,Dr. Ananya Murthy,Aerospace Engineering
+F114,Dr. Vidya Murthy,Aerospace Engineering
+F115,Dr. Tanvi Reddy,Aerospace Engineering
+F116,Dr. Aditya Biradar,Civil Engineering
+F117,Dr. Rohan Kamath,Civil Engineering
+F118,Dr. Vinay Pai,Civil Engineering
+F119,Dr. Rahul Kamath,Civil Engineering
+F120,Dr. Rishab Rao,Civil Engineering
+F121,Dr. Sahana Chauhan,Civil Engineering
+F122,Dr. Spoorthi Mishra,Civil Engineering
+F123,Dr. Swathi Naik,Civil Engineering
+F124,Dr. Deepika Lingaiah,Civil Engineering
+F125,Dr. Shreya Iyer,Civil Engineering
+F126,Dr. Priya Mishra,Civil Engineering
+F127,Dr. Nandini Chauhan,Civil Engineering
+F128,Dr. Sumanth Menon,Civil Engineering
+F129,Dr. Vinay Kattimani,Civil Engineering
+F130,Dr. Siddharth Khan,Civil Engineering
+F131,Dr. Akash Joshi,Life Sciences
+F132,Dr. Vidya Kulkarni,Life Sciences
+F133,Dr. Akash Kumar,Life Sciences
+F134,Dr. Tanvi Sharma,Life Sciences
+F135,Dr. Rahul Joshi,Life Sciences
+F136,Dr. Rohan Reddy,Life Sciences
+F137,Dr. Darshan Jadhav,Life Sciences
+F138,Dr. Ishita Jadhav,Life Sciences
+F139,Dr. Amrutha Shetty,Life Sciences
+F140,Dr. Divya Kulkarni,Life Sciences
+F141,Dr. Pooja Singh,Life Sciences
+F142,Dr. Priya Kumar,Life Sciences
+F143,Dr. Pranav Patil,Life Sciences
+F144,Dr. Pooja Pai,Life Sciences
+F145,Dr. Gagan Murthy,Life Sciences
+F146,Dr. Gagan Gupta,Basic Sciences & Humanities
+F147,Dr. Rakshita Angadi,Basic Sciences & Humanities
+F148,Dr. Ayesha Ahmed,Basic Sciences & Humanities
+F149,Dr. Madhu Chauhan,Basic Sciences & Humanities
+F150,Dr. Gagan Kamath,Basic Sciences & Humanities
+F151,Dr. Shreya Hiremath,Basic Sciences & Humanities
+F152,Dr. Rahul Rao,Basic Sciences & Humanities
+F153,Dr. Shreya Jadhav,Basic Sciences & Humanities
+F154,Dr. Abhishek Singh,Basic Sciences & Humanities
+F155,Dr. Pavan Hegde,Basic Sciences & Humanities
+F156,Dr. Dhanush Iyer,Basic Sciences & Humanities
+F157,Dr. Karthik Gowda,Basic Sciences & Humanities
+F158,Dr. Arjun Chauhan,Basic Sciences & Humanities
+F159,Dr. Vidya Acharya,Basic Sciences & Humanities
+F160,Dr. Pranav Kumar,Basic Sciences & Humanities
+F161,Dr. Abhishek Kulkarni,Basic Sciences & Humanities
+F162,Dr. Aditya Murthy,Basic Sciences & Humanities
+F163,Dr. Dhanush Naik,Basic Sciences & Humanities
+F164,Dr. Naveen Shenoy,Basic Sciences & Humanities
+F165,Dr. Vinay Poojary,Basic Sciences & Humanities
+F166,Dr. Abhishek Kumar,Basic Sciences & Humanities
+F167,Dr. Ishita Rao,Basic Sciences & Humanities
+F168,Dr. Tejas Singh,Basic Sciences & Humanities
+F169,Dr. Siddharth Poojary,Basic Sciences & Humanities
+F170,Dr. Mohammed Iyer,Basic Sciences & Humanities

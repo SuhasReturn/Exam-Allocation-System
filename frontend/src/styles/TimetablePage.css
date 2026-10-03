@@ -1,0 +1,12 @@
+.timetable-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.timetable-controls .form-group {
+  margin-bottom: 0;
+  min-width: 180px;
+}

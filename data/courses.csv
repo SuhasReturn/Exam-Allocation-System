@@ -1,0 +1,143 @@
+course_code,title,semester,faculty_code
+MAT101,Engineering Mathematics I,1,F146
+PHY101,Engineering Physics,1,F147
+CHY101,Engineering Chemistry,1,F148
+PRG101,Programming for Problem Solving,1,F149
+ENG101,Technical Communication,1,F150
+MAT301,Engineering Mathematics III,3,F151
+HSS501,Professional Ethics and Management,5,F152
+MGT701,Engineering Economics and Finance,7,F153
+OE301,Entrepreneurship Fundamentals,3,F106
+OE302,Indian Constitution and Governance,3,F116
+OE303,Financial Literacy,3,F131
+OE304,Introduction to Psychology,3,F154
+OE305,Environmental Sustainability,3,F001
+OE306,Public Speaking,3,F041
+OE501,Intellectual Property Rights,5,F132
+OE502,Digital Marketing,5,F155
+OE503,Disaster Management,5,F002
+OE504,Introduction to Artificial Intelligence,5,F042
+OE505,Renewable Energy Basics,5,F066
+OE506,Cyber Laws,5,F081
+OE701,Project Management,7,F003
+OE702,Operations Research Basics,7,F043
+OE703,Startup Finance,7,F067
+OE704,Human Resource Management,7,F082
+OE705,Technical Writing,7,F107
+OE706,Supply Chain Basics,7,F117
+CSE101,Introduction to Computer Science & Engineering,1,F004
+CS301,Data Structures and Algorithms,3,F005
+CS302,Discrete Mathematical Structures,3,F006
+CSE301,Object Oriented Programming with Java,3,F007
+CS501,Database Management Systems,5,F008
+CS502,Operating Systems,5,F009
+CSE501,Theory of Computation,5,F010
+CS701,Software Engineering,7,F011
+CS702,Computer Networks,7,F012
+CSE701,Compiler Design,7,F013
+AIML101,Introduction to CSE (Artificial Intelligence & Machine Learning),1,F014
+AIML301,Foundations of Machine Learning,3,F015
+AIML501,Deep Learning,5,F016
+AIML701,Natural Language Processing,7,F017
+CSDS101,Introduction to CSE (Data Science),1,F018
+CSDS301,Statistics for Data Science,3,F019
+CSDS501,Big Data Analytics,5,F020
+CSDS701,Data Visualization,7,F021
+CSCY101,Introduction to CSE (Cyber Security),1,F022
+CSCY301,Cryptography Fundamentals,3,F023
+CSCY501,Network Security,5,F024
+CSCY701,Ethical Hacking and Digital Forensics,7,F025
+CSCC101,Introduction to CSE (Cloud Computing),1,F026
+CSCC301,Cloud Infrastructure Basics,3,F027
+CSCC501,Virtualization and Containers,5,F028
+CSCC701,Cloud Security and DevOps,7,F029
+ISE101,Introduction to Information Science & Engineering,1,F030
+ISE301,Java Programming,3,F031
+ISE501,Web Technologies,5,F032
+ISE701,Information Security,7,F033
+IT101,Introduction to Information Technology,1,F034
+IT301,Python Programming,3,F035
+IT501,Full Stack Development,5,F036
+IT701,Mobile Application Development,7,F037
+AIDS101,Introduction to Artificial Intelligence & Data Science,1,F038
+AIDS301,Probability for AI,3,F039
+AIDS501,Machine Learning Algorithms,5,F040
+AIDS701,Generative AI Systems,7,F001
+ECE101,Introduction to Electronics & Communication Engineering,1,F044
+EC301,Network Analysis,3,F045
+EC302,Analog Electronics,3,F046
+ECE301,Signals and Systems,3,F047
+EC501,Digital Signal Processing,5,F048
+EC502,Microcontrollers and Embedded Systems,5,F049
+ECE501,Electromagnetic Theory,5,F050
+EC701,Digital Communication,7,F051
+EC702,Antennas and Wave Propagation,7,F052
+ECE701,Wireless Communication,7,F053
+VLSI101,Introduction to ECE (VLSI Design & Technology),1,F054
+VLSI301,Digital System Design,3,F055
+VLSI501,CMOS Circuit Design,5,F056
+VLSI701,Physical Design Automation,7,F057
+EIE101,Introduction to Electronics & Instrumentation Engineering,1,F058
+EIE301,Sensors and Transducers,3,F059
+EIE501,Process Instrumentation,5,F060
+EIE701,Industrial Automation,7,F061
+EEE101,Introduction to Electrical & Electronics Engineering,1,F068
+EE301,Electric Circuit Analysis,3,F069
+EE302,Electrical Machines I,3,F070
+EEE301,Analog and Digital Circuits,3,F071
+EE501,Power Systems I,5,F072
+EE502,Control Systems,5,F073
+EEE501,Electrical Machines II,5,F074
+EE701,Power Electronics,7,F075
+EE702,Switchgear and Protection,7,F076
+EEE701,Renewable Energy Systems,7,F077
+ME101,Introduction to Mechanical Engineering,1,F083
+ME301,Engineering Thermodynamics,3,F084
+ME302,Mechanics of Materials,3,F085
+ME301,Kinematics of Machinery,3,F086
+ME501,Fluid Mechanics,5,F087
+ME502,Machine Design,5,F088
+ME501,Dynamics of Machinery,5,F089
+ME701,Heat and Mass Transfer,7,F090
+ME702,Manufacturing Technology,7,F091
+ME701,Industrial Engineering,7,F092
+MCT101,Introduction to Mechatronics,1,F093
+MCT301,Sensors and Actuators,3,F094
+MCT501,Mechatronic System Design,5,F095
+MCT701,Industrial Robotics,7,F096
+RAA101,Introduction to Robotics & Automation,1,F097
+RAA301,Robot Kinematics,3,F098
+RAA501,Control of Robotic Systems,5,F099
+RAA701,Machine Vision,7,F100
+AUTO101,Introduction to Automobile Engineering,1,F101
+AUTO301,Automotive Engines,3,F102
+AUTO501,Vehicle Dynamics,5,F103
+AUTO701,Electric Vehicle Technology,7,F104
+AERO101,Introduction to Aerospace Engineering,1,F108
+AERO301,Aerodynamics,3,F109
+AERO501,Aircraft Structures,5,F110
+AERO701,Propulsion Systems,7,F111
+CIV101,Introduction to Civil Engineering,1,F118
+CIV301,Strength of Materials,3,F119
+CIV302,Surveying,3,F120
+CIV301,Building Materials and Construction,3,F121
+CIV501,Structural Analysis,5,F122
+CIV502,Geotechnical Engineering,5,F123
+CIV501,Hydrology and Water Resources,5,F124
+CIV701,Design of RC Structures,7,F125
+CIV702,Transportation Engineering,7,F126
+CIV701,Environmental Engineering,7,F127
+BT101,Introduction to Biotechnology,1,F133
+LIFE301,Biochemistry,3,F134
+LIFE302,Chemical Process Calculations,3,F135
+BT301,Cell and Molecular Biology,3,F136
+LIFE501,Bioprocess Principles,5,F137
+LIFE502,Chemical Reaction Engineering,5,F138
+BT501,Genetic Engineering,5,F139
+LIFE701,Process Control,7,F140
+LIFE702,Plant Design and Economics,7,F141
+BT701,Bioinformatics,7,F142
+CHE101,Introduction to Chemical Engineering,1,F143
+CHE301,Chemical Technology,3,F144
+CHE501,Mass Transfer Operations,5,F145
+CHE701,Petroleum Refining,7,F131

@@ -1,0 +1,47 @@
+.clash-banner {
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-xl);
+  border: 1px solid;
+}
+
+.clash-banner.danger {
+  background-color: var(--color-danger-soft);
+  border-color: #F5C6C6;
+}
+
+.clash-banner.warning {
+  background-color: var(--color-warning-soft);
+  border-color: #F5DEB3;
+}
+
+.clash-banner-title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-sm);
+}
+
+.clash-banner.danger .clash-banner-title {
+  color: var(--color-danger);
+}
+
+.clash-banner.warning .clash-banner-title {
+  color: var(--color-warning);
+}
+
+.clash-banner-list {
+  list-style: none;
+  padding: 0;
+}
+
+.clash-banner-list li {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  padding: var(--space-xs) 0;
+  line-height: 1.5;
+}
+
+.clash-banner-list li::before {
+  content: '• ';
+  font-weight: bold;
+}

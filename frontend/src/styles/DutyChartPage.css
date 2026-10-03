@@ -1,0 +1,26 @@
+.duty-controls {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.duty-replace-btn {
+  background: none;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  transition: background-color 0.12s;
+}
+
+.duty-replace-btn:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.duty-replace-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

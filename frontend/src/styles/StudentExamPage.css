@@ -1,0 +1,52 @@
+.student-exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.exam-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.exam-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.exam-card-code {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+}
+
+.exam-card-title {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+
+.exam-card-right {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.exam-detail {
+  text-align: center;
+}
+
+.exam-detail-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.exam-detail-value {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  margin-top: 2px;
+}

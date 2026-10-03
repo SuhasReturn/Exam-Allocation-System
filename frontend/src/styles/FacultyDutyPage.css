@@ -1,0 +1,26 @@
+.faculty-unavailable-section {
+  margin-top: var(--space-2xl);
+}
+
+.faculty-unavailable-section h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-lg);
+}
+
+.unavailable-form {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.unavailable-form .form-group {
+  margin-bottom: 0;
+}
+
+.unavailable-result {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-success);
+}

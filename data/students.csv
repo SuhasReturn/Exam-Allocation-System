@@ -1,0 +1,501 @@
+reg_no,name,branch,semester
+PU26CSE001,Spoorthi Desai,Computer Science & Engineering,1
+PU25CSE002,Spoorthi Singh,Computer Science & Engineering,3
+PU24CSE003,Bhavana Gupta,Computer Science & Engineering,5
+PU23CSE004,Divya Hegde,Computer Science & Engineering,7
+PU26CSE005,Naveen Kulkarni,Computer Science & Engineering,1
+PU25CSE006,Vidya Hegde,Computer Science & Engineering,3
+PU24CSE007,Suhas Kattimani,Computer Science & Engineering,5
+PU23CSE008,Divya Gupta,Computer Science & Engineering,7
+PU26CSE009,Pranav Gupta,Computer Science & Engineering,1
+PU25CSE010,Pranav Gowda,Computer Science & Engineering,3
+PU24CSE011,Aditya Pai,Computer Science & Engineering,5
+PU23CSE012,Siddharth Poojary,Computer Science & Engineering,7
+PU26CSE013,Rakshita Yadav,Computer Science & Engineering,1
+PU25CSE014,Varun Mishra,Computer Science & Engineering,3
+PU24CSE015,Meghana Yadav,Computer Science & Engineering,5
+PU23CSE016,Priya Rao,Computer Science & Engineering,7
+PU26CSE017,Sanjay Gupta,Computer Science & Engineering,1
+PU25CSE018,Pooja Desai,Computer Science & Engineering,3
+PU24CSE019,Zoya Das,Computer Science & Engineering,5
+PU23CSE020,Nandini Desai,Computer Science & Engineering,7
+PU26CSE021,Swathi Rao,Computer Science & Engineering,1
+PU25CSE022,Manoj Ahmed,Computer Science & Engineering,3
+PU24CSE023,Aditya Kumar,Computer Science & Engineering,5
+PU23CSE024,Ananya Rao,Computer Science & Engineering,7
+PU26CSE025,Chaitra Nair,Computer Science & Engineering,1
+PU26AIML001,Darshan Jadhav,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML002,Naveen Yadav,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML003,Manoj Reddy,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML004,Naveen Ahmed,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML005,Ayesha Ahmed,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML006,Vikram Menon,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML007,Aditya Kumar,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML008,Kiran Gupta,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML009,Aditya Singh,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML010,Shruti Hiremath,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML011,Meghana Shetty,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML012,Ramya Kulkarni,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML013,Pavan Biradar,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML014,Pavan Gupta,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML015,Rehan Kamath,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML016,Aarav Verma,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML017,Karthik Biradar,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML018,Sneha Bhat,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML019,Prajwal Prasad,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML020,Lakshmi Acharya,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML021,Rakshita Chauhan,CSE (Artificial Intelligence & Machine Learning),1
+PU25AIML022,Siddharth Hiremath,CSE (Artificial Intelligence & Machine Learning),3
+PU24AIML023,Harsha Naik,CSE (Artificial Intelligence & Machine Learning),5
+PU23AIML024,Sahana Gowda,CSE (Artificial Intelligence & Machine Learning),7
+PU26AIML025,Ramya Jadhav,CSE (Artificial Intelligence & Machine Learning),1
+PU26CSDS001,Yash Ahmed,CSE (Data Science),1
+PU25CSDS002,Abhishek Nair,CSE (Data Science),3
+PU24CSDS003,Manoj Prasad,CSE (Data Science),5
+PU23CSDS004,Darshan Hegde,CSE (Data Science),7
+PU26CSDS005,Dhanush Lingaiah,CSE (Data Science),1
+PU25CSDS006,Manoj Poojary,CSE (Data Science),3
+PU24CSDS007,Pooja Kumar,CSE (Data Science),5
+PU23CSDS008,Vikram Naik,CSE (Data Science),7
+PU26CSDS009,Deepika Swamy,CSE (Data Science),1
+PU25CSDS010,Nandini Shenoy,CSE (Data Science),3
+PU24CSDS011,Fatima Lingaiah,CSE (Data Science),5
+PU23CSDS012,Divya Desai,CSE (Data Science),7
+PU26CSDS013,Naveen Shetty,CSE (Data Science),1
+PU25CSDS014,Pooja Joshi,CSE (Data Science),3
+PU24CSDS015,Dhanush Yadav,CSE (Data Science),5
+PU23CSDS016,Priya Murthy,CSE (Data Science),7
+PU26CSDS017,Shreya Reddy,CSE (Data Science),1
+PU25CSDS018,Gagan Kamath,CSE (Data Science),3
+PU24CSDS019,Aditya Rao,CSE (Data Science),5
+PU23CSDS020,Zoya Gowda,CSE (Data Science),7
+PU26CSDS021,Manoj Iyer,CSE (Data Science),1
+PU25CSDS022,Shruti Bhat,CSE (Data Science),3
+PU24CSDS023,Darshan Hegde,CSE (Data Science),5
+PU23CSDS024,Sneha Kattimani,CSE (Data Science),7
+PU26CSDS025,Manoj Rao,CSE (Data Science),1
+PU26CSCY001,Naveen Hiremath,CSE (Cyber Security),1
+PU25CSCY002,Rishab Angadi,CSE (Cyber Security),3
+PU24CSCY003,Kavya Murthy,CSE (Cyber Security),5
+PU23CSCY004,Rishab Lingaiah,CSE (Cyber Security),7
+PU26CSCY005,Ayesha Patil,CSE (Cyber Security),1
+PU25CSCY006,Swathi Angadi,CSE (Cyber Security),3
+PU24CSCY007,Vikram Menon,CSE (Cyber Security),5
+PU23CSCY008,Sanjay Shenoy,CSE (Cyber Security),7
+PU26CSCY009,Amrutha Angadi,CSE (Cyber Security),1
+PU25CSCY010,Prajwal Kamath,CSE (Cyber Security),3
+PU24CSCY011,Rakshita Menon,CSE (Cyber Security),5
+PU23CSCY012,Rehan Murthy,CSE (Cyber Security),7
+PU26CSCY013,Suhas Swamy,CSE (Cyber Security),1
+PU25CSCY014,Ishita Bhat,CSE (Cyber Security),3
+PU24CSCY015,Vikram Shetty,CSE (Cyber Security),5
+PU23CSCY016,Ramya Rao,CSE (Cyber Security),7
+PU26CSCY017,Sneha Banerjee,CSE (Cyber Security),1
+PU25CSCY018,Keerthi Bhat,CSE (Cyber Security),3
+PU24CSCY019,Karthik Acharya,CSE (Cyber Security),5
+PU23CSCY020,Chaitra Singh,CSE (Cyber Security),7
+PU26CSCY021,Varun Khan,CSE (Cyber Security),1
+PU25CSCY022,Prajwal Reddy,CSE (Cyber Security),3
+PU24CSCY023,Vinay Ahmed,CSE (Cyber Security),5
+PU23CSCY024,Ayesha Angadi,CSE (Cyber Security),7
+PU26CSCY025,Ramya Kumar,CSE (Cyber Security),1
+PU26CSCC001,Shreya Iyer,CSE (Cloud Computing),1
+PU25CSCC002,Priya Murthy,CSE (Cloud Computing),3
+PU24CSCC003,Tanvi Khan,CSE (Cloud Computing),5
+PU23CSCC004,Lakshmi Shenoy,CSE (Cloud Computing),7
+PU26CSCC005,Nandini Lingaiah,CSE (Cloud Computing),1
+PU25CSCC006,Vidya Mishra,CSE (Cloud Computing),3
+PU24CSCC007,Swathi Hiremath,CSE (Cloud Computing),5
+PU23CSCC008,Akash Menon,CSE (Cloud Computing),7
+PU26CSCC009,Dhanush Singh,CSE (Cloud Computing),1
+PU25CSCC010,Meghana Reddy,CSE (Cloud Computing),3
+PU24CSCC011,Sanjay Singh,CSE (Cloud Computing),5
+PU23CSCC012,Arjun Shenoy,CSE (Cloud Computing),7
+PU26CSCC013,Ayesha Gowda,CSE (Cloud Computing),1
+PU25CSCC014,Bhavana Bhat,CSE (Cloud Computing),3
+PU24CSCC015,Rakshita Iyer,CSE (Cloud Computing),5
+PU23CSCC016,Zoya Pai,CSE (Cloud Computing),7
+PU26CSCC017,Zoya Jadhav,CSE (Cloud Computing),1
+PU25CSCC018,Vinay Lingaiah,CSE (Cloud Computing),3
+PU24CSCC019,Aditya Singh,CSE (Cloud Computing),5
+PU23CSCC020,Siddharth Biradar,CSE (Cloud Computing),7
+PU26CSCC021,Rishab Hiremath,CSE (Cloud Computing),1
+PU25CSCC022,Vikram Acharya,CSE (Cloud Computing),3
+PU24CSCC023,Sumanth Hiremath,CSE (Cloud Computing),5
+PU23CSCC024,Meghana Gupta,CSE (Cloud Computing),7
+PU26CSCC025,Darshan Reddy,CSE (Cloud Computing),1
+PU26ISE001,Rohan Prasad,Information Science & Engineering,1
+PU25ISE002,Keerthi Chauhan,Information Science & Engineering,3
+PU24ISE003,Sanjay Khan,Information Science & Engineering,5
+PU23ISE004,Ananya Ahmed,Information Science & Engineering,7
+PU26ISE005,Vidya Biradar,Information Science & Engineering,1
+PU25ISE006,Vinay Kumar,Information Science & Engineering,3
+PU24ISE007,Tejas Patil,Information Science & Engineering,5
+PU23ISE008,Sumanth Kamath,Information Science & Engineering,7
+PU26ISE009,Nandini Prasad,Information Science & Engineering,1
+PU25ISE010,Gagan Kattimani,Information Science & Engineering,3
+PU24ISE011,Gagan Gupta,Information Science & Engineering,5
+PU23ISE012,Pooja Hegde,Information Science & Engineering,7
+PU26ISE013,Aditya Chauhan,Information Science & Engineering,1
+PU25ISE014,Kavya Iyer,Information Science & Engineering,3
+PU24ISE015,Shreya Shetty,Information Science & Engineering,5
+PU23ISE016,Sneha Singh,Information Science & Engineering,7
+PU26ISE017,Siddharth Kamath,Information Science & Engineering,1
+PU25ISE018,Nikhil Khan,Information Science & Engineering,3
+PU24ISE019,Shruti Joshi,Information Science & Engineering,5
+PU23ISE020,Zoya Bhat,Information Science & Engineering,7
+PU26ISE021,Swathi Poojary,Information Science & Engineering,1
+PU25ISE022,Ananya Nair,Information Science & Engineering,3
+PU24ISE023,Pavan Kulkarni,Information Science & Engineering,5
+PU23ISE024,Shruti Murthy,Information Science & Engineering,7
+PU26ISE025,Gagan Sharma,Information Science & Engineering,1
+PU26IT001,Rehan Kulkarni,Information Technology,1
+PU25IT002,Vinay Bhat,Information Technology,3
+PU24IT003,Sahana Kumar,Information Technology,5
+PU23IT004,Sanjay Prasad,Information Technology,7
+PU26IT005,Vinay Ahmed,Information Technology,1
+PU25IT006,Deepika Kamath,Information Technology,3
+PU24IT007,Akash Hiremath,Information Technology,5
+PU23IT008,Naveen Lingaiah,Information Technology,7
+PU26IT009,Pavan Gupta,Information Technology,1
+PU25IT010,Nandini Reddy,Information Technology,3
+PU24IT011,Sneha Patil,Information Technology,5
+PU23IT012,Harsha Naik,Information Technology,7
+PU26IT013,Sahana Iyer,Information Technology,1
+PU25IT014,Nikhil Naik,Information Technology,3
+PU24IT015,Priya Das,Information Technology,5
+PU23IT016,Zoya Iyer,Information Technology,7
+PU26IT017,Rahul Shenoy,Information Technology,1
+PU25IT018,Sumanth Hiremath,Information Technology,3
+PU24IT019,Ishita Joshi,Information Technology,5
+PU23IT020,Naveen Mishra,Information Technology,7
+PU26IT021,Gagan Iyer,Information Technology,1
+PU25IT022,Vidya Das,Information Technology,3
+PU24IT023,Priya Reddy,Information Technology,5
+PU23IT024,Vidya Singh,Information Technology,7
+PU26IT025,Prajwal Gowda,Information Technology,1
+PU26AIDS001,Rohan Jadhav,Artificial Intelligence & Data Science,1
+PU25AIDS002,Rakshita Singh,Artificial Intelligence & Data Science,3
+PU24AIDS003,Darshan Hegde,Artificial Intelligence & Data Science,5
+PU23AIDS004,Naveen Chauhan,Artificial Intelligence & Data Science,7
+PU26AIDS005,Suhas Sharma,Artificial Intelligence & Data Science,1
+PU25AIDS006,Tanvi Shenoy,Artificial Intelligence & Data Science,3
+PU24AIDS007,Vinay Patil,Artificial Intelligence & Data Science,5
+PU23AIDS008,Shruti Jadhav,Artificial Intelligence & Data Science,7
+PU26AIDS009,Pavan Singh,Artificial Intelligence & Data Science,1
+PU25AIDS010,Madhu Nair,Artificial Intelligence & Data Science,3
+PU24AIDS011,Anjali Jadhav,Artificial Intelligence & Data Science,5
+PU23AIDS012,Pooja Poojary,Artificial Intelligence & Data Science,7
+PU26AIDS013,Shruti Reddy,Artificial Intelligence & Data Science,1
+PU25AIDS014,Deepika Kamath,Artificial Intelligence & Data Science,3
+PU24AIDS015,Arjun Naik,Artificial Intelligence & Data Science,5
+PU23AIDS016,Aditya Nair,Artificial Intelligence & Data Science,7
+PU26AIDS017,Rehan Yadav,Artificial Intelligence & Data Science,1
+PU25AIDS018,Shreya Rao,Artificial Intelligence & Data Science,3
+PU24AIDS019,Amrutha Acharya,Artificial Intelligence & Data Science,5
+PU23AIDS020,Rohan Verma,Artificial Intelligence & Data Science,7
+PU26AIDS021,Rakshita Verma,Artificial Intelligence & Data Science,1
+PU25AIDS022,Prajwal Verma,Artificial Intelligence & Data Science,3
+PU24AIDS023,Meghana Ahmed,Artificial Intelligence & Data Science,5
+PU23AIDS024,Sumanth Kulkarni,Artificial Intelligence & Data Science,7
+PU26AIDS025,Chaitra Lingaiah,Artificial Intelligence & Data Science,1
+PU26ECE001,Rohan Lingaiah,Electronics & Communication Engineering,1
+PU25ECE002,Pooja Hiremath,Electronics & Communication Engineering,3
+PU24ECE003,Pooja Nair,Electronics & Communication Engineering,5
+PU23ECE004,Darshan Desai,Electronics & Communication Engineering,7
+PU26ECE005,Meghana Singh,Electronics & Communication Engineering,1
+PU25ECE006,Ayesha Das,Electronics & Communication Engineering,3
+PU24ECE007,Naveen Yadav,Electronics & Communication Engineering,5
+PU23ECE008,Shreya Rao,Electronics & Communication Engineering,7
+PU26ECE009,Ishita Lingaiah,Electronics & Communication Engineering,1
+PU25ECE010,Anjali Shenoy,Electronics & Communication Engineering,3
+PU24ECE011,Swathi Rao,Electronics & Communication Engineering,5
+PU23ECE012,Pranav Khan,Electronics & Communication Engineering,7
+PU26ECE013,Ananya Gupta,Electronics & Communication Engineering,1
+PU25ECE014,Rehan Naik,Electronics & Communication Engineering,3
+PU24ECE015,Nikhil Patil,Electronics & Communication Engineering,5
+PU23ECE016,Rishab Nair,Electronics & Communication Engineering,7
+PU26ECE017,Varun Shenoy,Electronics & Communication Engineering,1
+PU25ECE018,Chaitra Banerjee,Electronics & Communication Engineering,3
+PU24ECE019,Naveen Chauhan,Electronics & Communication Engineering,5
+PU23ECE020,Akash Joshi,Electronics & Communication Engineering,7
+PU26ECE021,Rohan Sharma,Electronics & Communication Engineering,1
+PU25ECE022,Madhu Patil,Electronics & Communication Engineering,3
+PU24ECE023,Lakshmi Iyer,Electronics & Communication Engineering,5
+PU23ECE024,Vidya Nair,Electronics & Communication Engineering,7
+PU26ECE025,Anjali Kumar,Electronics & Communication Engineering,1
+PU26VLSI001,Divya Shenoy,ECE (VLSI Design & Technology),1
+PU25VLSI002,Varun Jadhav,ECE (VLSI Design & Technology),3
+PU24VLSI003,Sahana Sharma,ECE (VLSI Design & Technology),5
+PU23VLSI004,Shruti Khan,ECE (VLSI Design & Technology),7
+PU26VLSI005,Akash Gowda,ECE (VLSI Design & Technology),1
+PU25VLSI006,Pranav Swamy,ECE (VLSI Design & Technology),3
+PU24VLSI007,Vinay Mishra,ECE (VLSI Design & Technology),5
+PU23VLSI008,Divya Shenoy,ECE (VLSI Design & Technology),7
+PU26VLSI009,Nandini Khan,ECE (VLSI Design & Technology),1
+PU25VLSI010,Lakshmi Naik,ECE (VLSI Design & Technology),3
+PU24VLSI011,Naveen Kattimani,ECE (VLSI Design & Technology),5
+PU23VLSI012,Spoorthi Jadhav,ECE (VLSI Design & Technology),7
+PU26VLSI013,Rohan Bhat,ECE (VLSI Design & Technology),1
+PU25VLSI014,Vinay Kamath,ECE (VLSI Design & Technology),3
+PU24VLSI015,Chaitra Shetty,ECE (VLSI Design & Technology),5
+PU23VLSI016,Arjun Angadi,ECE (VLSI Design & Technology),7
+PU26VLSI017,Spoorthi Acharya,ECE (VLSI Design & Technology),1
+PU25VLSI018,Sanjay Murthy,ECE (VLSI Design & Technology),3
+PU24VLSI019,Suhas Reddy,ECE (VLSI Design & Technology),5
+PU23VLSI020,Chaitra Swamy,ECE (VLSI Design & Technology),7
+PU26VLSI021,Sumanth Poojary,ECE (VLSI Design & Technology),1
+PU25VLSI022,Vinay Poojary,ECE (VLSI Design & Technology),3
+PU24VLSI023,Shruti Gowda,ECE (VLSI Design & Technology),5
+PU23VLSI024,Fatima Kulkarni,ECE (VLSI Design & Technology),7
+PU26VLSI025,Bhavana Verma,ECE (VLSI Design & Technology),1
+PU26EIE001,Vikram Hiremath,Electronics & Instrumentation Engineering,1
+PU25EIE002,Rehan Naik,Electronics & Instrumentation Engineering,3
+PU24EIE003,Tanvi Hiremath,Electronics & Instrumentation Engineering,5
+PU23EIE004,Aarav Mishra,Electronics & Instrumentation Engineering,7
+PU26EIE005,Pranav Gupta,Electronics & Instrumentation Engineering,1
+PU25EIE006,Aditya Banerjee,Electronics & Instrumentation Engineering,3
+PU24EIE007,Deepika Swamy,Electronics & Instrumentation Engineering,5
+PU23EIE008,Rahul Lingaiah,Electronics & Instrumentation Engineering,7
+PU26EIE009,Ramya Kamath,Electronics & Instrumentation Engineering,1
+PU25EIE010,Rahul Kattimani,Electronics & Instrumentation Engineering,3
+PU24EIE011,Rahul Banerjee,Electronics & Instrumentation Engineering,5
+PU23EIE012,Manoj Gupta,Electronics & Instrumentation Engineering,7
+PU26EIE013,Pranav Hiremath,Electronics & Instrumentation Engineering,1
+PU25EIE014,Madhu Kamath,Electronics & Instrumentation Engineering,3
+PU24EIE015,Siddharth Reddy,Electronics & Instrumentation Engineering,5
+PU23EIE016,Yash Desai,Electronics & Instrumentation Engineering,7
+PU26EIE017,Prajwal Menon,Electronics & Instrumentation Engineering,1
+PU25EIE018,Sneha Kamath,Electronics & Instrumentation Engineering,3
+PU24EIE019,Karthik Swamy,Electronics & Instrumentation Engineering,5
+PU23EIE020,Vidya Kumar,Electronics & Instrumentation Engineering,7
+PU26EIE021,Siddharth Pai,Electronics & Instrumentation Engineering,1
+PU25EIE022,Rishab Kumar,Electronics & Instrumentation Engineering,3
+PU24EIE023,Yash Gupta,Electronics & Instrumentation Engineering,5
+PU23EIE024,Rahul Verma,Electronics & Instrumentation Engineering,7
+PU26EIE025,Akash Mishra,Electronics & Instrumentation Engineering,1
+PU26EEE001,Pavan Joshi,Electrical & Electronics Engineering,1
+PU25EEE002,Manoj Naik,Electrical & Electronics Engineering,3
+PU24EEE003,Darshan Banerjee,Electrical & Electronics Engineering,5
+PU23EEE004,Vinay Sharma,Electrical & Electronics Engineering,7
+PU26EEE005,Akash Yadav,Electrical & Electronics Engineering,1
+PU25EEE006,Sanjay Acharya,Electrical & Electronics Engineering,3
+PU24EEE007,Pranav Menon,Electrical & Electronics Engineering,5
+PU23EEE008,Shruti Biradar,Electrical & Electronics Engineering,7
+PU26EEE009,Ramya Mishra,Electrical & Electronics Engineering,1
+PU25EEE010,Sanjay Murthy,Electrical & Electronics Engineering,3
+PU24EEE011,Shreya Menon,Electrical & Electronics Engineering,5
+PU23EEE012,Priya Swamy,Electrical & Electronics Engineering,7
+PU26EEE013,Nikhil Verma,Electrical & Electronics Engineering,1
+PU25EEE014,Siddharth Lingaiah,Electrical & Electronics Engineering,3
+PU24EEE015,Fatima Reddy,Electrical & Electronics Engineering,5
+PU23EEE016,Gagan Angadi,Electrical & Electronics Engineering,7
+PU26EEE017,Pavan Naik,Electrical & Electronics Engineering,1
+PU25EEE018,Priya Biradar,Electrical & Electronics Engineering,3
+PU24EEE019,Shruti Patil,Electrical & Electronics Engineering,5
+PU23EEE020,Prajwal Rao,Electrical & Electronics Engineering,7
+PU26EEE021,Varun Jadhav,Electrical & Electronics Engineering,1
+PU25EEE022,Kiran Hegde,Electrical & Electronics Engineering,3
+PU24EEE023,Manoj Gowda,Electrical & Electronics Engineering,5
+PU23EEE024,Rehan Acharya,Electrical & Electronics Engineering,7
+PU26EEE025,Varun Ahmed,Electrical & Electronics Engineering,1
+PU26ME001,Bhavana Hegde,Mechanical Engineering,1
+PU25ME002,Pavan Joshi,Mechanical Engineering,3
+PU24ME003,Nandini Yadav,Mechanical Engineering,5
+PU23ME004,Naveen Verma,Mechanical Engineering,7
+PU26ME005,Dhanush Hegde,Mechanical Engineering,1
+PU25ME006,Rishab Shenoy,Mechanical Engineering,3
+PU24ME007,Darshan Patil,Mechanical Engineering,5
+PU23ME008,Priya Kattimani,Mechanical Engineering,7
+PU26ME009,Rahul Hiremath,Mechanical Engineering,1
+PU25ME010,Naveen Hegde,Mechanical Engineering,3
+PU24ME011,Priya Kattimani,Mechanical Engineering,5
+PU23ME012,Shreya Verma,Mechanical Engineering,7
+PU26ME013,Divya Gowda,Mechanical Engineering,1
+PU25ME014,Dhanush Bhat,Mechanical Engineering,3
+PU24ME015,Manoj Gupta,Mechanical Engineering,5
+PU23ME016,Yash Menon,Mechanical Engineering,7
+PU26ME017,Anjali Ahmed,Mechanical Engineering,1
+PU25ME018,Kiran Patil,Mechanical Engineering,3
+PU24ME019,Keerthi Kamath,Mechanical Engineering,5
+PU23ME020,Sneha Lingaiah,Mechanical Engineering,7
+PU26ME021,Pavan Yadav,Mechanical Engineering,1
+PU25ME022,Shreya Kulkarni,Mechanical Engineering,3
+PU24ME023,Akash Shenoy,Mechanical Engineering,5
+PU23ME024,Rakshita Desai,Mechanical Engineering,7
+PU26ME025,Sneha Gupta,Mechanical Engineering,1
+PU26MCT001,Ishita Lingaiah,Mechatronics,1
+PU25MCT002,Rahul Naik,Mechatronics,3
+PU24MCT003,Manoj Gupta,Mechatronics,5
+PU23MCT004,Sumanth Verma,Mechatronics,7
+PU26MCT005,Sumanth Yadav,Mechatronics,1
+PU25MCT006,Nandini Kamath,Mechatronics,3
+PU24MCT007,Varun Rao,Mechatronics,5
+PU23MCT008,Vidya Das,Mechatronics,7
+PU26MCT009,Pooja Hegde,Mechatronics,1
+PU25MCT010,Nikhil Das,Mechatronics,3
+PU24MCT011,Meghana Poojary,Mechatronics,5
+PU23MCT012,Rehan Murthy,Mechatronics,7
+PU26MCT013,Abhishek Gupta,Mechatronics,1
+PU25MCT014,Abhishek Hiremath,Mechatronics,3
+PU24MCT015,Rakshita Nair,Mechatronics,5
+PU23MCT016,Shruti Kumar,Mechatronics,7
+PU26MCT017,Nandini Das,Mechatronics,1
+PU25MCT018,Keerthi Swamy,Mechatronics,3
+PU24MCT019,Zoya Gupta,Mechatronics,5
+PU23MCT020,Ananya Kattimani,Mechatronics,7
+PU26MCT021,Zoya Prasad,Mechatronics,1
+PU25MCT022,Tanvi Mishra,Mechatronics,3
+PU24MCT023,Vinay Mishra,Mechatronics,5
+PU23MCT024,Tejas Sharma,Mechatronics,7
+PU26MCT025,Sneha Ahmed,Mechatronics,1
+PU26RAA001,Karthik Rao,Robotics & Automation,1
+PU25RAA002,Yash Kattimani,Robotics & Automation,3
+PU24RAA003,Anjali Lingaiah,Robotics & Automation,5
+PU23RAA004,Akash Shetty,Robotics & Automation,7
+PU26RAA005,Siddharth Reddy,Robotics & Automation,1
+PU25RAA006,Rehan Desai,Robotics & Automation,3
+PU24RAA007,Siddharth Banerjee,Robotics & Automation,5
+PU23RAA008,Pranav Pai,Robotics & Automation,7
+PU26RAA009,Tanvi Kumar,Robotics & Automation,1
+PU25RAA010,Divya Yadav,Robotics & Automation,3
+PU24RAA011,Anjali Chauhan,Robotics & Automation,5
+PU23RAA012,Rohan Banerjee,Robotics & Automation,7
+PU26RAA013,Abhishek Gowda,Robotics & Automation,1
+PU25RAA014,Madhu Hegde,Robotics & Automation,3
+PU24RAA015,Lakshmi Chauhan,Robotics & Automation,5
+PU23RAA016,Ishita Kamath,Robotics & Automation,7
+PU26RAA017,Yash Desai,Robotics & Automation,1
+PU25RAA018,Aditya Hegde,Robotics & Automation,3
+PU24RAA019,Anjali Prasad,Robotics & Automation,5
+PU23RAA020,Dhanush Gowda,Robotics & Automation,7
+PU26RAA021,Arjun Singh,Robotics & Automation,1
+PU25RAA022,Siddharth Menon,Robotics & Automation,3
+PU24RAA023,Arjun Pai,Robotics & Automation,5
+PU23RAA024,Pavan Kumar,Robotics & Automation,7
+PU26RAA025,Rakshita Shenoy,Robotics & Automation,1
+PU26AUTO001,Naveen Shetty,Automobile Engineering,1
+PU25AUTO002,Divya Bhat,Automobile Engineering,3
+PU24AUTO003,Vinay Rao,Automobile Engineering,5
+PU23AUTO004,Vidya Hiremath,Automobile Engineering,7
+PU26AUTO005,Rehan Kulkarni,Automobile Engineering,1
+PU25AUTO006,Nikhil Hiremath,Automobile Engineering,3
+PU24AUTO007,Sumanth Shetty,Automobile Engineering,5
+PU23AUTO008,Swathi Kumar,Automobile Engineering,7
+PU26AUTO009,Naveen Menon,Automobile Engineering,1
+PU25AUTO010,Mohammed Singh,Automobile Engineering,3
+PU24AUTO011,Akash Pai,Automobile Engineering,5
+PU23AUTO012,Prajwal Hegde,Automobile Engineering,7
+PU26AUTO013,Keerthi Ahmed,Automobile Engineering,1
+PU25AUTO014,Anjali Hiremath,Automobile Engineering,3
+PU24AUTO015,Darshan Sharma,Automobile Engineering,5
+PU23AUTO016,Priya Patil,Automobile Engineering,7
+PU26AUTO017,Tanvi Kumar,Automobile Engineering,1
+PU25AUTO018,Aarav Reddy,Automobile Engineering,3
+PU24AUTO019,Varun Kamath,Automobile Engineering,5
+PU23AUTO020,Shreya Ahmed,Automobile Engineering,7
+PU26AUTO021,Fatima Mishra,Automobile Engineering,1
+PU25AUTO022,Karthik Nair,Automobile Engineering,3
+PU24AUTO023,Spoorthi Angadi,Automobile Engineering,5
+PU23AUTO024,Priya Sharma,Automobile Engineering,7
+PU26AUTO025,Sneha Prasad,Automobile Engineering,1
+PU26AERO001,Harsha Kumar,Aerospace Engineering,1
+PU25AERO002,Keerthi Shenoy,Aerospace Engineering,3
+PU24AERO003,Swathi Khan,Aerospace Engineering,5
+PU23AERO004,Arjun Reddy,Aerospace Engineering,7
+PU26AERO005,Vinay Sharma,Aerospace Engineering,1
+PU25AERO006,Vidya Yadav,Aerospace Engineering,3
+PU24AERO007,Sneha Hiremath,Aerospace Engineering,5
+PU23AERO008,Rishab Murthy,Aerospace Engineering,7
+PU26AERO009,Kavya Das,Aerospace Engineering,1
+PU25AERO010,Karthik Iyer,Aerospace Engineering,3
+PU24AERO011,Rakshita Gowda,Aerospace Engineering,5
+PU23AERO012,Rohan Murthy,Aerospace Engineering,7
+PU26AERO013,Swathi Shetty,Aerospace Engineering,1
+PU25AERO014,Pavan Joshi,Aerospace Engineering,3
+PU24AERO015,Gagan Pai,Aerospace Engineering,5
+PU23AERO016,Pavan Das,Aerospace Engineering,7
+PU26AERO017,Arjun Khan,Aerospace Engineering,1
+PU25AERO018,Pooja Prasad,Aerospace Engineering,3
+PU24AERO019,Fatima Yadav,Aerospace Engineering,5
+PU23AERO020,Sahana Gupta,Aerospace Engineering,7
+PU26AERO021,Kavya Acharya,Aerospace Engineering,1
+PU25AERO022,Siddharth Patil,Aerospace Engineering,3
+PU24AERO023,Gagan Patil,Aerospace Engineering,5
+PU23AERO024,Mohammed Menon,Aerospace Engineering,7
+PU26AERO025,Rakshita Chauhan,Aerospace Engineering,1
+PU26CIV001,Akash Singh,Civil Engineering,1
+PU25CIV002,Dhanush Desai,Civil Engineering,3
+PU24CIV003,Akash Singh,Civil Engineering,5
+PU23CIV004,Swathi Kattimani,Civil Engineering,7
+PU26CIV005,Sanjay Das,Civil Engineering,1
+PU25CIV006,Fatima Kamath,Civil Engineering,3
+PU24CIV007,Yash Singh,Civil Engineering,5
+PU23CIV008,Shreya Shetty,Civil Engineering,7
+PU26CIV009,Swathi Poojary,Civil Engineering,1
+PU25CIV010,Rishab Kamath,Civil Engineering,3
+PU24CIV011,Vinay Singh,Civil Engineering,5
+PU23CIV012,Rishab Naik,Civil Engineering,7
+PU26CIV013,Ayesha Hiremath,Civil Engineering,1
+PU25CIV014,Lakshmi Chauhan,Civil Engineering,3
+PU24CIV015,Fatima Kattimani,Civil Engineering,5
+PU23CIV016,Swathi Singh,Civil Engineering,7
+PU26CIV017,Arjun Mishra,Civil Engineering,1
+PU25CIV018,Nikhil Khan,Civil Engineering,3
+PU24CIV019,Fatima Shenoy,Civil Engineering,5
+PU23CIV020,Kiran Reddy,Civil Engineering,7
+PU26CIV021,Meghana Shetty,Civil Engineering,1
+PU25CIV022,Aditya Reddy,Civil Engineering,3
+PU24CIV023,Aditya Lingaiah,Civil Engineering,5
+PU23CIV024,Ananya Joshi,Civil Engineering,7
+PU26CIV025,Harsha Menon,Civil Engineering,1
+PU26BT001,Akash Prasad,Biotechnology,1
+PU25BT002,Rahul Nair,Biotechnology,3
+PU24BT003,Sanjay Hiremath,Biotechnology,5
+PU23BT004,Yash Hegde,Biotechnology,7
+PU26BT005,Prajwal Kattimani,Biotechnology,1
+PU25BT006,Amrutha Hegde,Biotechnology,3
+PU24BT007,Naveen Patil,Biotechnology,5
+PU23BT008,Kavya Biradar,Biotechnology,7
+PU26BT009,Ananya Pai,Biotechnology,1
+PU25BT010,Aarav Iyer,Biotechnology,3
+PU24BT011,Manoj Naik,Biotechnology,5
+PU23BT012,Rahul Patil,Biotechnology,7
+PU26BT013,Nandini Murthy,Biotechnology,1
+PU25BT014,Gagan Lingaiah,Biotechnology,3
+PU24BT015,Arjun Shetty,Biotechnology,5
+PU23BT016,Sanjay Patil,Biotechnology,7
+PU26BT017,Sneha Banerjee,Biotechnology,1
+PU25BT018,Rohan Reddy,Biotechnology,3
+PU24BT019,Sumanth Kulkarni,Biotechnology,5
+PU23BT020,Divya Iyer,Biotechnology,7
+PU26BT021,Anjali Joshi,Biotechnology,1
+PU25BT022,Harsha Angadi,Biotechnology,3
+PU24BT023,Sahana Hegde,Biotechnology,5
+PU23BT024,Nikhil Shenoy,Biotechnology,7
+PU26BT025,Suhas Yadav,Biotechnology,1
+PU26CHE001,Sumanth Hegde,Chemical Engineering,1
+PU25CHE002,Rishab Desai,Chemical Engineering,3
+PU24CHE003,Vikram Khan,Chemical Engineering,5
+PU23CHE004,Meghana Gupta,Chemical Engineering,7
+PU26CHE005,Ananya Das,Chemical Engineering,1
+PU25CHE006,Prajwal Menon,Chemical Engineering,3
+PU24CHE007,Sahana Ahmed,Chemical Engineering,5
+PU23CHE008,Amrutha Kamath,Chemical Engineering,7
+PU26CHE009,Keerthi Shenoy,Chemical Engineering,1
+PU25CHE010,Mohammed Patil,Chemical Engineering,3
+PU24CHE011,Rakshita Naik,Chemical Engineering,5
+PU23CHE012,Pavan Ahmed,Chemical Engineering,7
+PU26CHE013,Shreya Naik,Chemical Engineering,1
+PU25CHE014,Spoorthi Reddy,Chemical Engineering,3
+PU24CHE015,Abhishek Kulkarni,Chemical Engineering,5
+PU23CHE016,Amrutha Shetty,Chemical Engineering,7
+PU26CHE017,Deepika Bhat,Chemical Engineering,1
+PU25CHE018,Aditya Desai,Chemical Engineering,3
+PU24CHE019,Shreya Menon,Chemical Engineering,5
+PU23CHE020,Aditya Yadav,Chemical Engineering,7
+PU26CHE021,Akash Swamy,Chemical Engineering,1
+PU25CHE022,Ananya Rao,Chemical Engineering,3
+PU24CHE023,Suhas Shenoy,Chemical Engineering,5
+PU23CHE024,Meghana Rao,Chemical Engineering,7
+PU26CHE025,Ananya Hegde,Chemical Engineering,1

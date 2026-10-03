@@ -1,0 +1,18 @@
+.seating-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.seating-controls .form-group {
+  margin-bottom: 0;
+  min-width: 120px;
+}
+
+.seating-halls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}

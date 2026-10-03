@@ -1,0 +1,53 @@
+.import-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+}
+
+.import-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-xs);
+}
+
+.import-card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+  line-height: 1.5;
+}
+
+.import-card code {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-background);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.file-input-wrapper {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.file-input-wrapper input[type="file"] {
+  flex: 1;
+  font-size: var(--font-size-sm);
+}
+
+.import-result {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+}
+
+.import-result.success {
+  background-color: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.import-result.error {
+  background-color: var(--color-danger-soft);
+  color: var(--color-danger);
+}

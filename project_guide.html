@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exam Seat Allocation System — Complete Master Technical & Interview Guide</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 14mm 16mm 14mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.55;
+    font-size: 13px;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Cover Page */
+  .cover-page {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 92vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .cover-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    width: fit-content;
+  }
+
+  .cover-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+  }
+
+  .cover-subtitle {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .cover-meta-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+  }
+
+  .cover-meta-row {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  .cover-meta-row:last-child { margin-bottom: 0; }
+  .cover-meta-label {
+    width: 140px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  .cover-meta-val {
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .tech-pill {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px 0;
+    font-size: 11.5px;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 7px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  tr:nth-child(even) td {
+    background: #f8fafc;
+  }
+
+  /* Callout boxes */
+  .callout {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 12px;
+    page-break-inside: avoid;
+  }
+
+  .callout.interview {
+    background: #f0fdf4;
+    border-left-color: #16a34a;
+  }
+
+  .callout.warning {
+    background: #fffbeb;
+    border-left-color: #d97706;
+  }
+
+  .callout-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Code blocks */
+  code {
+    font-family: "Courier New", Courier, monospace;
+    background: #f1f5f9;
+    padding: 1.5px 5px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+  }
+
+  pre {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10.5px;
+    line-height: 1.45;
+    overflow-x: auto;
+    margin: 10px 0 14px 0;
+    page-break-inside: avoid;
+  }
+
+  pre code {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+  }
+
+  /* Lists */
+  ul, ol {
+    margin: 0 0 10px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  /* Q&A card */
+  .qa-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    page-break-inside: avoid;
+  }
+
+  .qa-q {
+    background: #f8fafc;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #1e3a8a;
+    border-bottom: 1px solid #e2e8f0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .qa-a {
+    padding: 10px 12px;
+    font-size: 12px;
+    color: #334155;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= COVER PAGE ================= -->
+<div class="cover-page">
+  <div class="cover-badge">Master Technical Specification & Interview Guide</div>
+  <h1 class="cover-title">Automated Exam Seat & Invigilator Allocation System</h1>
+  <div class="cover-subtitle">
+    A Complete In-and-Out Architectural Blueprint, Algorithmic Deep Dive, Directory Dictionary, and Comprehensive Interview Playbook.
+  </div>
+
+  <div class="cover-meta-box">
+    <div class="cover-meta-row">
+      <div class="cover-meta-label">Candidate</div>
+      <div class="cover-meta-val">Suhas Kattimani (Final Year Engineering Student)</div>
+    </div>
+    <div class="cover-meta-row">
+      <div class="cover-meta-label">Target Roles</div>
+      <div class="cover-meta-val">Java Backend Developer / Full-Stack Software Engineer</div>
+    </div>
+    <div class="cover-meta-row">
+      <div class="cover-meta-label">Architecture</div>
+      <div class="cover-meta-val">Decoupled REST API + SPA (Spring Boot 3 + React Vite)</div>
+    </div>
+    <div class="cover-meta-row">
+      <div class="cover-meta-label">Core Algorithms</div>
+      <div class="cover-meta-val">Greedy Graph Coloring (Welsh-Powell), Round-Robin Interleaving, Fair Load Balancing</div>
+    </div>
+    <div class="cover-meta-row">
+      <div class="cover-meta-label">Security</div>
+      <div class="cover-meta-val">Stateless Spring Security 6, JJWT (HMAC-SHA256), Role-Based Access Control</div>
+    </div>
+  </div>
+
+  <div class="tech-pills">
+    <span class="tech-pill">Java 17</span>
+    <span class="tech-pill">Spring Boot 3.2</span>
+    <span class="tech-pill">Spring Data JPA</span>
+    <span class="tech-pill">Hibernate</span>
+    <span class="tech-pill">Spring Security 6</span>
+    <span class="tech-pill">MySQL 8</span>
+    <span class="tech-pill">React 18</span>
+    <span class="tech-pill">Vite</span>
+    <span class="tech-pill">JUnit 5</span>
+    <span class="tech-pill">No Lombok (Handcrafted)</span>
+  </div>
+</div>
+
+<!-- ================= SECTION 1 ================= -->
+<h1>Part 1: The Interview Pitch (How to Speak About This Project)</h1>
+
+<h2>1.1 The 60-Second "Elevator Pitch" for HR & Recruiters</h2>
+<div class="callout interview">
+  <div class="callout-title">💡 HR Script (Memorize this word-for-word)</div>
+  <p><em>"In universities, exam scheduling is a massive operational headache. Exam controllers spend weeks in spreadsheets manually scheduling dates, arranging seating charts to prevent cheating, and assigning faculty invigilation duties without double-booking. It’s error-prone and leads to timetable clashes and student complaints.</em></p>
+  <p><em>To solve this, I designed and built an <strong>Automated Exam Seat & Invigilator Allocation System</strong> using <strong>Java 17, Spring Boot 3, MySQL, and React</strong>.</em></p>
+  <p><em>The system completely automates the workflow with zero clashes:</em></p>
+  <ul>
+    <li><em>It models course scheduling as an NP-complete <strong>Graph Coloring Problem</strong> to generate conflict-free timetables in sub-seconds.</em></li>
+    <li><em>It uses a <strong>Round-Robin Interleaving Algorithm</strong> to alternate students from different branches in adjacent exam hall desks so neighbors never have the same question paper.</em></li>
+    <li><em>It distributes invigilation duties using a <strong>Fair Load-Balancing Algorithm</strong> that respects faculty leave and ensures faculty never invigilate their own department's exams.</em></li>
+    <li><em>It provides a secure, role-based portal (Admin, Faculty, Student) secured with stateless <strong>Spring Security and JWT</strong>.</em></li>
+  </ul>
+  <p><em>I wrote all business logic and boilerplate by hand—no Lombok or black-box libraries—so I deeply understand every layer from database transactions to client-side state management."</em></p>
+</div>
+
+<h2>1.2 The Technical Pitch for Senior Architects & Tech Leads</h2>
+<p>When interviewing with a Senior Java Engineer or Engineering Manager, lead with <strong>design trade-offs and computational complexity</strong>:</p>
+<ul>
+  <li><strong>Graph Coloring over Brute-Force</strong>: Timetable scheduling is vertex coloring on a conflict graph $G=(V, E)$. Brute-force backtracking has exponential complexity $O(k^N)$ and times out. I implemented greedy graph coloring with the <strong>Welsh-Powell heuristic</strong> (sorting vertices by degree descending), executing deterministically in $O(V^2 + E)$ polynomial time.</li>
+  <li><strong>Spatial Interleaving over Random Seating</strong>: Random desk assignment risks placing identical exam takers adjacent to each other. By partitioning candidates into course-specific FIFO queues and round-robin filling desks with a row parity offset, I guarantee spatial separation across both horizontal and vertical axes.</li>
+  <li><strong>Deliberate Exclusion of Lombok</strong>: Rather than relying on annotations like <code>@Data</code>, I handwrote all constructors, getters, setters, and <code>equals()/hashCode()</code> methods. This demonstrates understanding of defensive copying, immutable constructor injection, and avoiding Hibernate proxy identity pitfalls.</li>
+</ul>
+
+<!-- ================= SECTION 2 ================= -->
+<h1>Part 2: System Architecture & Security Design</h1>
+
+<pre><code>+-------------------------------------------------------------------------------+
+|                       REACT 18 SINGLE PAGE APPLICATION (VITE)                 |
+|  [Admin Dashboard]       [Timetable Page]       [Seating Grid]       [Duty]   |
++-------------------------------------------------------------------------------+
+                                      | (Bearer JWT Token)
+                                      v
++-------------------------------------------------------------------------------+
+|                      SPRING SECURITY 6 FILTER CHAIN                           |
+|  JwtAuthenticationFilter  -->  SecurityContextHolder  -->  URL RBAC Matchers  |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                             REST CONTROLLER LAYER                             |
+|  AuthController | TimetableController | SeatingController | DutyController    |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                             SERVICE LAYER & ALGORITHMS                        |
+|  - TimetableGeneratorService (Greedy Graph Coloring)                          |
+|  - SeatingPlanGeneratorService (Round-Robin Interleaving)                     |
+|  - InvigilatorDutyAssignerService (Constraint & Load Balancing)               |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                        SPRING DATA JPA REPOSITORY LAYER                       |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                             MYSQL 8.0 RELATIONAL DB                           |
++-------------------------------------------------------------------------------+</code></pre>
+
+<h2>2.1 Authentication & Authorization (Stateless JWT)</h2>
+<p>The system enforces a strictly stateless security model using Spring Security 6 and JJWT:</p>
+<ol>
+  <li><strong>Login</strong>: User submits credentials to <code>POST /api/auth/login</code>. <code>AuthService</code> authenticates via Spring's <code>AuthenticationManager</code> and generates a cryptographically signed HMAC-SHA256 JWT token.</li>
+  <li><strong>JWT Payload</strong>: Encodes the subject username and role authority claim (<code>ROLE_ADMIN</code>, <code>ROLE_STUDENT</code>, <code>ROLE_FACULTY</code>) with a 24-hour expiration timestamp.</li>
+  <li><strong>Request Interception</strong>: <code>JwtAuthenticationFilter</code> extends <code>OncePerRequestFilter</code>. On every incoming request, it extracts the <code>Authorization: Bearer &lt;token&gt;</code> header, verifies signature integrity, extracts granted authorities, and sets an <code>UsernamePasswordAuthenticationToken</code> in Spring's <code>SecurityContextHolder</code>.</li>
+  <li><strong>No Server-Side Sessions</strong>: <code>SessionCreationPolicy.STATELESS</code> ensures zero memory overhead on the server, making the backend horizontally scalable.</li>
+</ol>
+
+<!-- ================= SECTION 3 ================= -->
+<div class="page-break"></div>
+<h1>Part 3: Core Algorithms Detailed Breakdown</h1>
+
+<h2>3.1 Algorithm 1: Conflict-Free Timetable Generation (Greedy Graph Coloring)</h2>
+<p><strong>Problem Formulation</strong>: Let $C = \{c_1, c_2, \dots, c_n\}$ be the set of courses. Two courses $c_i, c_j$ conflict if their student enrollment intersection is non-empty: $Enroll(c_i) \cap Enroll(c_j) \neq \emptyset$. We must assign each course to a slot $s \in S$ such that no two conflicting courses share the same slot.</p>
+
+<pre><code>Algorithm: Welsh-Powell Greedy Graph Coloring
+Input: List of Courses C, List of Enrollments E, List of Slots S
+Output: Schedule mapping each Course to an ExamSlot
+
+1. Construct conflict graph G = (V, E_graph):
+   For each pair (c_i, c_j):
+      If countSharedStudents(c_i, c_j) > 0:
+         Add edge (c_i, c_j) to E_graph
+2. For each vertex c in V:
+      Compute degree(c) = count of incident edges in E_graph
+3. Sort courses V in descending order of degree(c)  // Welsh-Powell Heuristic
+4. For each course c in sorted V:
+      assigned = false
+      For each slot s in S (chronologically ordered):
+         conflictFound = false
+         For each neighbor n of c:
+            If neighbor n is already assigned to slot s:
+               conflictFound = true; break
+         If NOT conflictFound:
+            Assign course c to slot s
+            assigned = true; break
+      If NOT assigned:
+         Throw NotEnoughSlotsException("Cannot schedule without clashes in given dates")
+5. Persist Exam records in MySQL within @Transactional boundary</code></pre>
+
+<h2>3.2 Algorithm 2: Anti-Cheating Seating Plan (Round-Robin Interleaving)</h2>
+<p><strong>Goal</strong>: Given physical examination halls divided into $R$ rows and $C$ columns, assign students taking different exams into adjacent desks to eliminate peer copying.</p>
+
+<pre><code>Algorithm: Round-Robin Cross-Course Interleaving with Row Parity
+Input: ExamSlot slot, List of Halls H, Concurrent Exams E_slot
+Output: List of SeatAllocation records
+
+1. For each course in E_slot:
+      Create a FIFO Queue Q_course containing enrolled students
+2. ActiveQueues = [Q_1, Q_2, ..., Q_k]
+3. queueIndex = 0
+4. For each Hall h in H (ordered by capacity descending):
+      For row = 1 to h.totalRows:
+         // Shift starting queue index on each row to prevent vertical alignment
+         queueIndex = (queueIndex + 1) % ActiveQueues.size()
+         For col = 1 to h.totalColumns:
+            If all queues in ActiveQueues are empty: break hall loops
+            
+            // Find next non-empty course queue
+            While ActiveQueues[queueIndex] is empty:
+               Remove ActiveQueues[queueIndex]
+               If ActiveQueues is empty: break
+               queueIndex = queueIndex % ActiveQueues.size()
+            
+            student = ActiveQueues[queueIndex].poll()
+            Create SeatAllocation:
+               student = student
+               hall = h
+               seatNo = "R" + row + "-C" + col
+               slot = slot
+            
+            queueIndex = (queueIndex + 1) % ActiveQueues.size()
+5. If students remain unseated after exhausting all halls:
+      Throw NotEnoughHallsException("Total hall capacity exceeded")</code></pre>
+
+<h2>3.3 Algorithm 3: Fair Invigilator Duty Allocation</h2>
+<p><strong>Goal</strong>: Assign faculty members to supervise halls during exam slots subject to strict institutional constraints and fair load distribution.</p>
+<ul>
+  <li><strong>Constraint 1 (Department Exclusion)</strong>: Faculty cannot invigilate their own department’s exams (e.g. CSE faculty cannot supervise CSE papers).</li>
+  <li><strong>Constraint 2 (Leave Exclusion)</strong>: Faculty who submitted unavailable dates in <code>FacultyLeave</code> are excluded.</li>
+  <li><strong>Constraint 3 (No Double-Booking)</strong>: A faculty member cannot be in two halls during the same slot.</li>
+  <li><strong>Constraint 4 (Fair Load Distribution)</strong>: Candidate faculty passing constraints 1–3 are sorted by <code>currentAssignedDuties</code> ascending. The least-loaded faculty member is chosen.</li>
+  <li><strong>Emergency Replacement</strong>: If an assigned faculty is absent, the admin triggers <code>replaceInvigilator(dutyId)</code>, which selects the next lowest-loaded eligible substitute atomically.</li>
+</ul>
+
+<!-- ================= SECTION 4 ================= -->
+<div class="page-break"></div>
+<h1>Part 4: Complete Directory & File-by-File Dictionary</h1>
+
+<h2>4.1 Root & Configuration Files</h2>
+<table>
+  <tr>
+    <th style="width: 25%;">File / Path</th>
+    <th style="width: 35%;">Contents & Purpose</th>
+    <th style="width: 40%;">Interview Talking Points</th>
+  </tr>
+  <tr>
+    <td><code>pom.xml</code></td>
+    <td>Maven build configuration. Declares Java 17, Spring Boot 3.2, Data JPA, Security 6, JJWT 0.11.5, MySQL connector, Bean Validation, JUnit 5.</td>
+    <td>Deliberately excludes Lombok. Shows mastery of handwritten Java boilerplate, explicit constructor injection, and clean entity encapsulation.</td>
+  </tr>
+  <tr>
+    <td><code>.gitignore</code></td>
+    <td>Excludes Maven <code>target/</code>, Node <code>frontend/node_modules/</code>, build outputs, and IDE files.</td>
+    <td>Demonstrates professional repository hygiene and separation of source vs generated artifacts.</td>
+  </tr>
+  <tr>
+    <td><code>README.md</code></td>
+    <td>Comprehensive system documentation: architecture diagram, algorithmic breakdown, setup steps, and API catalog.</td>
+    <td>High-quality documentation expected in production engineering teams.</td>
+  </tr>
+  <tr>
+    <td><code>src/main/resources/ application.properties</code></td>
+    <td>Database connection (JDBC URL, credentials), Hibernate DDL mode (<code>update</code>), SQL logging, and JWT secret/expiration.</td>
+    <td><code>ddl-auto=update</code> allows automatic schema generation on startup without wiping existing test data.</td>
+  </tr>
+</table>
+
+<h2>4.2 Sample Dataset Directory (<code>data/</code>)</h2>
+<table>
+  <tr>
+    <th style="width: 25%;">File</th>
+    <th style="width: 35%;">Structure</th>
+    <th style="width: 40%;">Algorithmic Significance</th>
+  </tr>
+  <tr>
+    <td><code>students.csv</code></td>
+    <td><code>reg_no,name,branch,semester</code><br/>(24 students: CSE, ISE, ECE)</td>
+    <td>Includes realistic university registration numbers (e.g. <code>1PU21EC007,Suhas kattimani,ECE,5</code>).</td>
+  </tr>
+  <tr>
+    <td><code>courses.csv</code></td>
+    <td><code>code,title,semester,faculty_id</code><br/>(7 courses across 4 departments)</td>
+    <td>Maps courses directly to teaching faculty for department exclusion checks.</td>
+  </tr>
+  <tr>
+    <td><code>enrollments.csv</code></td>
+    <td><code>student_reg_no,course_code</code><br/>(72 enrollment records)</td>
+    <td><strong>Core Design</strong>: <code>21MAT51</code> (Discrete Mathematics) is shared across all 3 branches, proving that graph coloring handles dense conflict cliques.</td>
+  </tr>
+  <tr>
+    <td><code>seed_data.sql</code></td>
+    <td>Raw SQL inserts for halls (LH-101, LH-102, LH-201) and faculty profiles.</td>
+    <td>Allows rapid bootstrapping in MySQL Workbench without running the UI.</td>
+  </tr>
+</table>
+
+<h2>4.3 Entity Models (<code>src/main/java/.../model/</code>)</h2>
+<table>
+  <tr>
+    <th style="width: 25%;">Entity Class</th>
+    <th style="width: 35%;">Key Fields & Annotations</th>
+    <th style="width: 40%;">Role in System</th>
+  </tr>
+  <tr>
+    <td><code>Student.java</code></td>
+    <td><code>regNo</code> (unique), <code>name</code>, <code>branch</code>, <code>semester</code></td>
+    <td>Identifies exam candidates. Root entity for enrollments and seating.</td>
+  </tr>
+  <tr>
+    <td><code>Faculty.java</code></td>
+    <td><code>name</code>, <code>department</code></td>
+    <td>Instructors available for invigilation duties.</td>
+  </tr>
+  <tr>
+    <td><code>Course.java</code></td>
+    <td><code>code</code> (unique), <code>title</code>, <code>semester</code>, <code>@ManyToOne faculty</code></td>
+    <td>Subject being examined. Vertices in the conflict graph.</td>
+  </tr>
+  <tr>
+    <td><code>Enrollment.java</code></td>
+    <td><code>@ManyToOne student</code>, <code>@ManyToOne course</code></td>
+    <td>Join entity defining student course participation. Defines graph edges.</td>
+  </tr>
+  <tr>
+    <td><code>Hall.java</code></td>
+    <td><code>name</code> (unique), <code>totalRows</code>, <code>totalColumns</code></td>
+    <td>Physical exam room. Capacity dynamically computed as <code>rows * cols</code>.</td>
+  </tr>
+  <tr>
+    <td><code>ExamSlot.java</code></td>
+    <td><code>examDate</code>, <code>@Enumerated Session</code> (FN/AN)</td>
+    <td>Unique time window (e.g. 2026-11-02 Forenoon). Colors in graph coloring.</td>
+  </tr>
+  <tr>
+    <td><code>Exam.java</code></td>
+    <td><code>@ManyToOne course</code>, <code>@ManyToOne slot</code></td>
+    <td>Scheduled exam instance linking a course to a time slot.</td>
+  </tr>
+  <tr>
+    <td><code>SeatAllocation.java</code></td>
+    <td><code>student</code>, <code>exam</code>, <code>slot</code>, <code>hall</code>, <code>seatNo</code></td>
+    <td>Individual desk assignment (e.g. Student 1PU21CS001 at Hall LH-101 Desk R1-C2).</td>
+  </tr>
+  <tr>
+    <td><code>InvigilatorDuty.java</code></td>
+    <td><code>faculty</code>, <code>slot</code>, <code>hall</code></td>
+    <td>Staff supervision record ensuring each hall has an invigilator.</td>
+  </tr>
+  <tr>
+    <td><code>FacultyLeave.java</code></td>
+    <td><code>faculty</code>, <code>leaveDate</code></td>
+    <td>Blacklisted dates when a professor cannot be assigned duty.</td>
+  </tr>
+  <tr>
+    <td><code>UserAccount.java</code></td>
+    <td><code>username</code>, <code>passwordHash</code>, <code>Role</code>, <code>linkedStudent</code>, <code>linkedFaculty</code></td>
+    <td>Core authentication entity. Links credentials to student/faculty profiles.</td>
+  </tr>
+</table>
+
+<!-- ================= SECTION 5 ================= -->
+<div class="page-break"></div>
+<h1>Part 4 (Contd.): Services, Controllers & Frontend</h1>
+
+<h2>4.4 Service Layer (<code>src/main/java/.../service/</code>)</h2>
+<ul>
+  <li><code>TimetableGeneratorService.java</code>: Builds course conflict matrix, sorts by degree descending, and greedily assigns earliest available non-conflicting slots. Fully <code>@Transactional</code>.</li>
+  <li><code>ClashValidatorService.java</code>: Traverses all student enrollments and generates a comprehensive <code>ClashReport</code> verifying 0 students have 2 exams in the same slot.</li>
+  <li><code>SeatingPlanGeneratorService.java</code>: Traverses halls row-by-row and round-robin interleaves student queues across different courses to prevent cheating.</li>
+  <li><code>InvigilatorDutyAssignerService.java</code>: Greedy least-loaded assignment checking department exclusions and faculty leave. Includes <code>replaceInvigilator()</code>.</li>
+  <li><code>CsvImportService.java</code>: Fast, low-memory CSV ingestion using <code>BufferedReader</code> and atomic database persistence.</li>
+  <li><code>StudentService</code>, <code>CourseService</code>, <code>FacultyService</code>, <code>HallService</code>: CRUD services handling validation and repository interaction.</li>
+</ul>
+
+<h2>4.5 REST Controller Layer (<code>src/main/java/.../controller/</code>)</h2>
+<table>
+  <tr>
+    <th>Controller</th>
+    <th>Base Endpoint</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td><code>AuthController.java</code></td>
+    <td><code>POST /api/auth/login</code></td>
+    <td>Authenticates credentials and returns JWT token + user role.</td>
+  </tr>
+  <tr>
+    <td><code>ExamTimetableController.java</code></td>
+    <td><code>/api/admin/timetable/**</code></td>
+    <td>Triggers timetable generation, returns schedule rows, and runs clash check.</td>
+  </tr>
+  <tr>
+    <td><code>SeatingPlanController.java</code></td>
+    <td><code>/api/admin/seating/**</code></td>
+    <td>Triggers seating generation and returns 2D hall grid matrix.</td>
+  </tr>
+  <tr>
+    <td><code>InvigilatorDutyController.java</code></td>
+    <td><code>/api/admin/duties/**</code></td>
+    <td>Triggers duty generation and handles faculty replacement.</td>
+  </tr>
+  <tr>
+    <td><code>StudentController.java</code></td>
+    <td><code>/api/admin/students</code> &amp; <code>/api/student/my-exams</code></td>
+    <td>Admin student CRUD and student self-view resolving schedule via JWT.</td>
+  </tr>
+  <tr>
+    <td><code>FacultyController.java</code></td>
+    <td><code>/api/admin/faculty</code> &amp; <code>/api/faculty/my-duties</code></td>
+    <td>Admin faculty CRUD, duty roster view, and leave submission.</td>
+  </tr>
+  <tr>
+    <td><code>CsvImportController.java</code></td>
+    <td><code>/api/admin/import/**</code></td>
+    <td>Multipart file upload endpoints for students, courses, and enrollments.</td>
+  </tr>
+</table>
+
+<h2>4.6 React Frontend Architecture (<code>frontend/src/</code>)</h2>
+<ul>
+  <li><code>context/AuthContext.jsx</code>: Global state holding JWT token, username, and role, synced with <code>localStorage</code>.</li>
+  <li><code>components/ProtectedRoute.jsx</code>: Route wrapper redirecting unauthenticated users or unauthorized roles.</li>
+  <li><code>components/HallSeatGrid.jsx</code>: Visual 2D hall matrix displaying desks with pastel course badges and student hover tooltips.</li>
+  <li><code>pages/AdminDashboardPage.jsx</code>: Real-time statistic cards and quick-action navigation.</li>
+  <li><code>pages/TimetablePage.jsx</code>: Date picker, generation trigger, timetable table, and live clash alert banners.</li>
+  <li><code>pages/SeatingPlanPage.jsx</code>: Slot selector and visual examination hall seating viewer.</li>
+  <li><code>pages/StudentExamPage.jsx</code>: Clean card layout showing student's upcoming papers, hall, and assigned seat.</li>
+  <li><code>pages/FacultyDutyPage.jsx</code>: Schedule of invigilation duties with leave date submission form.</li>
+  <li><code>styles/theme.css</code>: Unified design system using CSS custom properties for modern glassmorphism.</li>
+</ul>
+
+<!-- ================= SECTION 6 ================= -->
+<div class="page-break"></div>
+<h1>Part 5: Top 15 Tough Technical Interview Questions & Answers</h1>
+
+<div class="qa-card">
+  <div class="qa-q">Q1: Why did you choose Graph Coloring for timetable scheduling over Integer Linear Programming (ILP) or Genetic Algorithms?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: ILP solvers provide exact mathematical optimization but suffer from exponential worst-case runtimes as binary variables multiply, making them heavy for mid-sized university servers. Genetic Algorithms are non-deterministic, hard to test in CI/CD, and cannot strictly guarantee zero hard clashes on every run. Greedy Graph Coloring using the Welsh-Powell heuristic orders vertices by degree descending. It executes in deterministic $O(V^2 + E)$ polynomial time, runs in sub-seconds, and mathematically guarantees zero student clashes.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q2: How does the Seating Plan generator prevent students writing the same exam from sitting next to or behind each other?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: Students taking concurrent exams in a slot are partitioned into FIFO queues by course. As we iterate through desks row-by-row, we round-robin cycle through course queues ($Course_A \rightarrow Course_B \rightarrow Course_A$), guaranteeing horizontal alternation. To prevent vertical alignment (where Course A sits directly behind Course A in a 4-column room), we shift the queue starting index by +1 on each new row. This produces a checkerboard distribution across both axes.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q3: How does your application maintain data integrity during schedule generation if the system runs out of halls halfway through?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: All generation methods in <code>TimetableGeneratorService</code> and <code>SeatingPlanGeneratorService</code> are annotated with Spring's <code>@Transactional</code>. If an unrecoverable state occurs (such as throwing <code>NotEnoughHallsException</code>), Spring's transaction manager intercepts the unchecked exception and issues a database <code>ROLLBACK</code>. All records created during that run are purged, preventing corrupted partial schedules in MySQL.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q4: Why did you choose stateless JWT authentication with Spring Security instead of standard HTTP session cookies?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: Stateless JWT completely decouples the React SPA from the Spring Boot REST API. Because the server does not store session state in memory or Redis, the backend is horizontally scalable across multiple server instances without sticky sessions. The JWT encodes the user's role (<code>ROLE_ADMIN</code>, <code>ROLE_STUDENT</code>), enabling <code>JwtAuthenticationFilter</code> to authorize incoming requests cryptographically without querying MySQL on every call.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q5: Why did you explicitly avoid using Lombok in this project?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: Many junior developers use Lombok annotations like <code>@Data</code> as a crutch without understanding that <code>@Data</code> generates <code>equals()</code> and <code>hashCode()</code> using all fields, which can trigger infinite recursion or break Hibernate proxy identity contracts in JPA entities. Writing getters, setters, and explicit constructors by hand demonstrates core Java mastery, explicit constructor dependency injection, and clean entity encapsulation.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q6: What is the N+1 query problem, and how did you prevent it in this project?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: The N+1 query problem occurs when Hibernate executes 1 query to fetch parent entities and then executes N individual queries to fetch lazy child relationships. In our system, when fetching seat allocations or duties, we use custom JPQL queries with <code>JOIN FETCH</code> (such as <code>JOIN FETCH sa.student JOIN FETCH sa.exam</code>) to retrieve the parent and child entities in a single SQL query.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q7: How did you implement CORS, and why is it necessary?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: Browsers enforce the Same-Origin Policy, preventing frontend JavaScript running on <code>http://localhost:5173</code> from reading responses from a backend at <code>http://localhost:8080</code>. I implemented <code>CorsConfig.java</code> registering a <code>CorsFilter</code> that sends <code>Access-Control-Allow-Origin</code>, <code>Access-Control-Allow-Methods</code>, and <code>Access-Control-Allow-Headers</code> headers, allowing preflight <code>OPTIONS</code> requests to succeed.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q8: How does the student portal resolve the correct exam schedule without the student passing their ID as an argument?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: To prevent Insecure Direct Object Reference (IDOR) attacks, the endpoint <code>/api/student/my-exams</code> takes no ID parameter. Instead, it reads the authenticated principal from Spring's <code>Authentication.getName()</code> extracted from the verified JWT. It finds the corresponding <code>UserAccount</code>, gets the <code>linkedStudent</code> entity, and queries allocations for that student ID. A student can never spoof or access another student's timetable.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q9: How does the system handle faculty duty replacement in case of an emergency absence?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: In <code>InvigilatorDutyAssignerService.replaceInvigilator(dutyId)</code>, the service retrieves the duty, identifies the slot and exam department, and searches for candidate faculty excluding the absent professor, faculty with existing duties in that slot, faculty on leave, and faculty from the exam's department. It sorts candidates by <code>dutyCount</code> ascending, assigns the lowest-loaded substitute, and updates the record atomically.
+  </div>
+</div>
+
+<div class="qa-card">
+  <div class="qa-q">Q10: What is the role of GlobalExceptionHandler in Spring Boot?</div>
+  <div class="qa-a">
+    <strong>Answer</strong>: Annotated with <code>@RestControllerAdvice</code>, <code>GlobalExceptionHandler</code> intercepts exceptions thrown anywhere in the controller layer. Instead of leaking internal stack traces or 500 errors to the client, it maps custom exceptions (e.g. <code>ResourceNotFoundException</code> $\rightarrow$ 404, <code>ClashDetectedException</code> $\rightarrow$ 409) to uniform JSON response payloads containing a clear HTTP status, timestamp, and human-readable message.
+  </div>
+</div>
+
+</body>
+</html>
