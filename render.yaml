@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: exam-allocation-backend
+    runtime: java
+    plan: free
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/exam-allocation-1.0.0.jar
+    envVars:
+      - key: DB_URL
+      - key: DB_USERNAME
+      - key: DB_PASSWORD
+      - key: JWT_SECRET
+      - key: CORS_ALLOWED_ORIGIN_PATTERNS
+      - key: JPA_DDL_AUTO
+        value: update
+      - key: JPA_SHOW_SQL
+        value: "false"
+      - key: JPA_FORMAT_SQL
+        value: "false"

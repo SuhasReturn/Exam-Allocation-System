@@ -306,6 +306,34 @@ mvn test
 
 ---
 
+## ☁️ Deployment (Render + Vercel)
+
+### Backend on Render
+
+1. Push this repository to GitHub.
+2. In Render, create a **Web Service** from this repository.
+3. Use:
+   - **Build Command**: `mvn clean package -DskipTests`
+   - **Start Command**: `java -jar target/exam-allocation-1.0.0.jar`
+4. Add environment variables in Render:
+   - `DB_URL` (JDBC URL to your production MySQL)
+   - `DB_USERNAME`
+   - `DB_PASSWORD`
+   - `JWT_SECRET`
+   - `CORS_ALLOWED_ORIGIN_PATTERNS` (for example: `https://your-frontend.vercel.app,https://*.vercel.app`)
+5. Render will provide `PORT` automatically; backend reads it via `server.port=${PORT:8080}`.
+
+### Frontend on Vercel
+
+1. Import the repository in Vercel.
+2. Set **Root Directory** to `frontend`.
+3. Set environment variable:
+   - `VITE_API_BASE_URL=https://your-backend.onrender.com/api`
+4. Deploy. The frontend already reads `VITE_API_BASE_URL` and falls back to `/api` for local development.
+5. SPA routing is handled by [`frontend/vercel.json`](d:/Exam%20seat%20allocation%20system/frontend/vercel.json).
+
+---
+
 ## 👨‍💻 Author & Academic Attribution
 
 - **Developer**: Suhas (Final Year Engineering Student)
