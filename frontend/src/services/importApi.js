@@ -14,10 +14,22 @@ export function importStudents(file) {
   return api.post('/admin/import/students', formData);
 }
 
+export function importFaculty(file) {
+  const formData = new FormData();
+  formData.append('file', file);
+  return api.post('/admin/import/faculty', formData);
+}
+
 export function importCourses(file) {
   const formData = new FormData();
   formData.append('file', file);
   return api.post('/admin/import/courses', formData);
+}
+
+export function importHalls(file) {
+  const formData = new FormData();
+  formData.append('file', file);
+  return api.post('/admin/import/halls', formData);
 }
 
 export function importEnrollments(file) {

@@ -32,11 +32,25 @@ public class DataImportController {
         return ResponseEntity.ok(buildImportResponse("students", count));
     }
 
+    @PostMapping("/faculty")
+    public ResponseEntity<Map<String, Object>> importFaculty(
+            @RequestParam("file") MultipartFile file) {
+        int count = csvImportService.importFaculty(file);
+        return ResponseEntity.ok(buildImportResponse("faculty", count));
+    }
+
     @PostMapping("/courses")
     public ResponseEntity<Map<String, Object>> importCourses(
             @RequestParam("file") MultipartFile file) {
         int count = csvImportService.importCourses(file);
         return ResponseEntity.ok(buildImportResponse("courses", count));
+    }
+
+    @PostMapping("/halls")
+    public ResponseEntity<Map<String, Object>> importHalls(
+            @RequestParam("file") MultipartFile file) {
+        int count = csvImportService.importHalls(file);
+        return ResponseEntity.ok(buildImportResponse("halls", count));
     }
 
     @PostMapping("/enrollments")

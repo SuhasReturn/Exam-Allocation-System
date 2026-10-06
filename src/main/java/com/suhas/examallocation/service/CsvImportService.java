@@ -4,10 +4,12 @@ import com.suhas.examallocation.exception.ResourceNotFoundException;
 import com.suhas.examallocation.model.Course;
 import com.suhas.examallocation.model.Enrollment;
 import com.suhas.examallocation.model.Faculty;
+import com.suhas.examallocation.model.Hall;
 import com.suhas.examallocation.model.Student;
 import com.suhas.examallocation.repository.CourseRepository;
 import com.suhas.examallocation.repository.EnrollmentRepository;
 import com.suhas.examallocation.repository.FacultyRepository;
+import com.suhas.examallocation.repository.HallRepository;
 import com.suhas.examallocation.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,15 +36,18 @@ public class CsvImportService {
     private final StudentRepository studentRepository;
     private final CourseRepository courseRepository;
     private final FacultyRepository facultyRepository;
+    private final HallRepository hallRepository;
     private final EnrollmentRepository enrollmentRepository;
 
     public CsvImportService(StudentRepository studentRepository,
                             CourseRepository courseRepository,
                             FacultyRepository facultyRepository,
+                            HallRepository hallRepository,
                             EnrollmentRepository enrollmentRepository) {
         this.studentRepository = studentRepository;
         this.courseRepository = courseRepository;
         this.facultyRepository = facultyRepository;
+        this.hallRepository = hallRepository;
         this.enrollmentRepository = enrollmentRepository;
     }
 
@@ -90,52 +95,131 @@ public class CsvImportService {
     }
 
     /**
-     * Expected CSV format: code,title,semester,faculty_id
-     * Example: 21CS51,Operating Systems,5,3
+     * Expected CSV format: employee_code,name,department
+     * Example: F001,Dr. Chaitra Kamath,Computer Science
      *
-     * The faculty_id must refer to an existing faculty record.
+     * Skips faculty whose employee code already exists.
+     */
+    @Transactional
+    public int importFaculty(MultipartFile file) {
+       List<String> lines = readLines(file);
+       int imported = 0;
+
+       for (int i = 0; i < lines.size(); i++) {
+           String line = lines.get(i).trim();
+           if (line.isEmpty()) {
+               continue;
+           }
+
+           String[] columns = line.split(",");
+           if (columns.length < 3) {
+               throw new IllegalArgumentException(
+                       "Invalid faculty CSV at line " + (i + 1)
+                       + ": expected 3 columns (employee_code,name,department), got "
+                       + columns.length);
+           }
+
+           String employeeCode = columns[0].trim();
+           String name = columns[1].trim();
+           String department = columns[2].trim();
+
+           if (facultyRepository.existsByEmployeeCode(employeeCode)) {
+               continue;
+           }
+
+           Faculty faculty = new Faculty(employeeCode, name, department);
+           facultyRepository.save(faculty);
+           imported++;
+       }
+
+       return imported;
+    }
+
+    /**
+     * Expected CSV format: code,title,semester,faculty_code
+     * Example: 21CS51,Operating Systems,5,F009
+     *
+     * Accepts either numeric faculty_id or faculty_code values.
      * Skips courses whose code already exists.
      */
     @Transactional
     public int importCourses(MultipartFile file) {
-        List<String> lines = readLines(file);
-        int imported = 0;
+       List<String> lines = readLines(file);
+       int imported = 0;
 
-        for (int i = 0; i < lines.size(); i++) {
-            String line = lines.get(i).trim();
-            if (line.isEmpty()) {
-                continue;
-            }
+       for (int i = 0; i < lines.size(); i++) {
+           String line = lines.get(i).trim();
+           if (line.isEmpty()) {
+               continue;
+           }
 
-            String[] columns = line.split(",");
-            if (columns.length < 4) {
-                throw new IllegalArgumentException(
-                        "Invalid course CSV at line " + (i + 1)
-                        + ": expected 4 columns (code,title,semester,faculty_id), got "
-                        + columns.length);
-            }
+           String[] columns = line.split(",");
+           if (columns.length < 4) {
+               throw new IllegalArgumentException(
+                       "Invalid course CSV at line " + (i + 1)
+                       + ": expected 4 columns (code,title,semester,faculty_code), got "
+                       + columns.length);
+           }
 
-            String code = columns[0].trim();
-            String title = columns[1].trim();
-            int lineNumber = i + 1;
-            int semester = parseIntColumn(columns[2].trim(), "semester", lineNumber);
-            Long facultyId = parseLongColumn(columns[3].trim(), "faculty_id", lineNumber);
+           String code = columns[0].trim();
+           String title = columns[1].trim();
+           int lineNumber = i + 1;
+           int semester = parseIntColumn(columns[2].trim(), "semester", lineNumber);
+           String facultyRef = columns[3].trim();
 
-            if (courseRepository.existsByCode(code)) {
-                continue;
-            }
+           if (courseRepository.existsByCode(code)) {
+               continue;
+           }
 
-            Faculty faculty = facultyRepository.findById(facultyId)
-                    .orElseThrow(() -> new ResourceNotFoundException(
-                            "Faculty with id " + facultyId
-                            + " not found (referenced in course " + code + ")"));
+           Faculty faculty = resolveFacultyForCourse(facultyRef, code, lineNumber);
 
-            Course course = new Course(code, title, semester, faculty);
-            courseRepository.save(course);
-            imported++;
-        }
+           Course course = new Course(code, title, semester, faculty);
+           courseRepository.save(course);
+           imported++;
+       }
 
-        return imported;
+       return imported;
+    }
+
+    /**
+     * Expected CSV format: hall_name,total_rows,total_columns
+     * Example: A-01,8,8
+     *
+     * Skips halls whose name already exists.
+     */
+    @Transactional
+    public int importHalls(MultipartFile file) {
+       List<String> lines = readLines(file);
+       int imported = 0;
+
+       for (int i = 0; i < lines.size(); i++) {
+           String line = lines.get(i).trim();
+           if (line.isEmpty()) {
+               continue;
+           }
+
+           String[] columns = line.split(",");
+           if (columns.length < 3) {
+               throw new IllegalArgumentException(
+                       "Invalid hall CSV at line " + (i + 1)
+                       + ": expected 3 columns (hall_name,total_rows,total_columns), got "
+                       + columns.length);
+           }
+
+           String name = columns[0].trim();
+           int totalRows = parseIntColumn(columns[1].trim(), "total_rows", i + 1);
+           int totalColumns = parseIntColumn(columns[2].trim(), "total_columns", i + 1);
+
+           if (hallRepository.existsByName(name)) {
+               continue;
+           }
+
+           Hall hall = new Hall(name, totalRows, totalColumns);
+           hallRepository.save(hall);
+           imported++;
+       }
+
+       return imported;
     }
 
     /**
@@ -186,6 +270,24 @@ public class CsvImportService {
         }
 
         return imported;
+    }
+
+    private Faculty resolveFacultyForCourse(String facultyRef, String courseCode, int lineNumber) {
+        String normalized = facultyRef.trim();
+
+        try {
+            long facultyId = Long.parseLong(normalized);
+            return facultyRepository.findById(facultyId)
+                    .orElseThrow(() -> new ResourceNotFoundException(
+                            "Faculty with id " + facultyId + " not found (referenced in course " + courseCode + ")"));
+        } catch (NumberFormatException ignored) {
+            // support the real CSV data format, which stores faculty codes like F146
+            String employeeCode = normalized.toUpperCase();
+            return facultyRepository.findByEmployeeCode(employeeCode)
+                    .orElseThrow(() -> new ResourceNotFoundException(
+                            "Faculty with code " + facultyRef + " not found (referenced in course " + courseCode
+                            + ", line " + lineNumber + ")"));
+        }
     }
 
     private List<String> readLines(MultipartFile file) {

@@ -55,6 +55,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- Local fallback database for development/testing when a MySQL server is not available -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- JWT library: jjwt splits into api, impl, and jackson modules -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>

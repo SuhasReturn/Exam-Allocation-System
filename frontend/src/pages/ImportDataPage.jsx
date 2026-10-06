@@ -1,5 +1,11 @@
 import { useState } from 'react';
-import { importStudents, importCourses, importEnrollments } from '../services/importApi';
+import {
+  importStudents,
+  importFaculty,
+  importCourses,
+  importHalls,
+  importEnrollments,
+} from '../services/importApi';
 import '../styles/ImportDataPage.css';
 
 function ImportCard({ title, description, format, onImport }) {
@@ -62,7 +68,7 @@ export default function ImportDataPage() {
     <div>
       <div className="page-header">
         <h1 className="page-title">Import Data</h1>
-        <p className="page-subtitle">Upload CSV files to load students, courses, and enrollments</p>
+        <p className="page-subtitle">Upload CSV files for students, faculty, halls, courses, and enrollments</p>
       </div>
 
       <div className="import-page-grid">
@@ -74,10 +80,24 @@ export default function ImportDataPage() {
         />
 
         <ImportCard
+          title="Faculty"
+          description="Upload faculty records. Duplicates (by employee_code) are skipped."
+          format="employee_code, name, department"
+          onImport={importFaculty}
+        />
+
+        <ImportCard
           title="Courses"
           description="Upload courses. Faculty must be imported first. Duplicates (by code) are skipped."
-          format="code, title, semester, faculty_id"
+          format="course_code, title, semester, faculty_code"
           onImport={importCourses}
+        />
+
+        <ImportCard
+          title="Halls"
+          description="Upload examination halls. Duplicates (by hall name) are skipped."
+          format="hall_name, total_rows, total_columns"
+          onImport={importHalls}
         />
 
         <ImportCard

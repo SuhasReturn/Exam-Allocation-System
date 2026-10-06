@@ -12,6 +12,10 @@ public class Faculty {
     private Long id;
 
     @NotBlank
+    @Column(name = "employee_code", nullable = false, unique = true)
+    private String employeeCode;
+
+    @NotBlank
     @Column(nullable = false)
     private String name;
 
@@ -25,6 +29,20 @@ public class Faculty {
     public Faculty(String name, String department) {
         this.name = name;
         this.department = department;
+    }
+
+    public Faculty(String employeeCode, String name, String department) {
+        this.employeeCode = employeeCode;
+        this.name = name;
+        this.department = department;
+    }
+
+    public String getEmployeeCode() {
+        return employeeCode;
+    }
+
+    public void setEmployeeCode(String employeeCode) {
+        this.employeeCode = employeeCode;
     }
 
     public Long getId() {

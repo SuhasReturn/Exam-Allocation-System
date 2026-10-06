@@ -55,13 +55,17 @@ public class DataSeeder {
             // 3. Seed Faculty if none exist
             Faculty facultyRao = null;
             if (facultyRepository.count() == 0) {
-                facultyRao = facultyRepository.save(new Faculty("Dr. Rajesh Rao", "Computer Science and Engineering"));
-                facultyRepository.save(new Faculty("Prof. Anita Desai", "Information Science and Engineering"));
-                facultyRepository.save(new Faculty("Dr. Vikram Singh", "Electronics and Communication Engineering"));
-                facultyRepository.save(new Faculty("Prof. Priya Sharma", "Mathematics"));
+                facultyRao = facultyRepository.save(new Faculty("F101", "Dr. Rajesh Rao", "Computer Science and Engineering"));
+                facultyRepository.save(new Faculty("F102", "Prof. Anita Desai", "Information Science and Engineering"));
+                facultyRepository.save(new Faculty("F103", "Dr. Vikram Singh", "Electronics and Communication Engineering"));
+                facultyRepository.save(new Faculty("F104", "Prof. Priya Sharma", "Mathematics"));
                 System.out.println("Seeded 4 faculty members");
             } else {
                 facultyRao = facultyRepository.findAll().get(0);
+                if (facultyRao.getEmployeeCode() == null) {
+                    facultyRao.setEmployeeCode("F101");
+                    facultyRepository.save(facultyRao);
+                }
             }
 
             // 4. Seed Faculty Account if none exists
