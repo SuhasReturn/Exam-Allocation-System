@@ -217,16 +217,6 @@ The frontend development server will launch at: `http://localhost:5173`.
 
 ---
 
-## 🔑 Default Login Credentials
-
-| Role | Username | Password | Purpose |
-|---|---|---|---|
-| **Admin** | `admin` | `admin123` | Complete administrative control & generation |
-| **Faculty** | `faculty1` | `faculty123` | View assigned duties & mark unavailable dates |
-| **Student** | `student1` | `student123` | View personalized exam dates, halls, and seats |
-
----
-
 ## 🧪 End-to-End Workflow Demonstration
 
 Follow these steps to demonstrate the full system capabilities:
